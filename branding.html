@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- ─── PRIMARY SEO ─────────────────────────────────────────── -->
+<title>Property Branding for Short-Term Rentals — Yellowwood Atelier | Naming, Identity, Direct-Booking Site Style</title>
+<meta name="description" content="Yellowwood Atelier's Property Branding service for short-term rentals: naming, wordmark, brand identity, in-property signage, branded merch, and direct-booking site visual style. Built by a former CMO. Priced from $3,500."/>
+<meta name="keywords" content="airbnb branding, str property branding, vacation rental brand identity, airbnb naming, str logo design, vacation rental welcome book, branded airbnb merch, direct booking site design, yellowwood atelier branding"/>
+<meta name="author" content="Yellowwood Atelier"/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+<link rel="canonical" href="https://atelier.yellowwoodre.com/branding"/>
+
+<meta property="og:title" content="Property Branding — Yellowwood Atelier"/>
+<meta property="og:description" content="Branding the property, not just the building. Property naming, identity, signage, and direct-booking site style for short-term rentals."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://atelier.yellowwoodre.com/branding"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://atelier.yellowwoodre.com/branding#service",
+  "name": "Property Branding for Short-Term Rentals",
+  "description": "Naming, wordmark, full brand identity, welcome books, in-property signage, branded merch, and direct-booking site visual style for short-term rental properties.",
+  "provider": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://atelier.yellowwoodre.com/" },
+  "serviceType": "Brand Identity Design",
+  "areaServed": "United States",
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "3500",
+    "highPrice": "8000",
+    "priceCurrency": "USD",
+    "offerCount": "3"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Property Branding tiers",
+    "itemListElement": [
+      { "@type": "Offer", "name": "Property Naming + Wordmark", "price": "3500", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Property Brand Identity", "price": "5500", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Property Brand + Direct-Booking Site Style", "price": "8000", "priceCurrency": "USD" }
+    ]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --forest: #253026; --bone: #F6F4EE; --gold: #D4A937; --clay: #DBA39D;
+  --sage: #69715E; --mist: #A7B6C2; --gray: #525C53; --rule: #E8E5DC; --ink: #1A1D1B;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --tree-rings: url("assets/TreeRings_v3.svg");
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); font-weight: 400; font-size: 16px; line-height: 1.55; color: var(--forest); background: var(--bone); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+/* Readability protection — gold text fails on clay/mist. NOTE: protection is class-based, so any new section that uses clay/mist as background must be added to this list explicitly. */
+.apply .eyebrow,
+.anatomy .eyebrow,
+.bridge .eyebrow,
+.context .eyebrow,
+.scope .eyebrow,
+.timeline .eyebrow,
+.cta-card .eyebrow,
+.next-step .eyebrow,
+.tool-callout .eyebrow,
+.section-divider .eyebrow,
+.case-card .eyebrow,
+.narrative.mist .eyebrow,
+.narrative.clay .eyebrow,
+section[style*="background: var(--clay)"] .eyebrow,
+section[style*="background: var(--mist)"] .eyebrow,
+section[style*="background:var(--clay)"] .eyebrow,
+section[style*="background:var(--mist)"] .eyebrow { color: var(--forest); }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 22px 5vw; display: flex; justify-content: space-between; align-items: center; color: var(--forest); background: rgba(246,244,238,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+.logo-img { height: 50px; width: auto; }
+nav ul { list-style: none; display: flex; gap: 28px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 400; }
+nav ul a:hover { color: var(--clay); transition: color .3s; }
+nav ul a.active { color: var(--clay); }
+@media (max-width: 900px) { nav ul { display: none; } }
+
+/* SUBHERO */
+.subhero { position: relative; padding: 200px 5vw 100px; background: var(--forest); color: var(--bone); overflow: hidden; }
+.subhero::before { content: ''; position: absolute; inset: 0; background-image: var(--tree-rings); background-size: 800px 800px; background-position: 75% 50%; background-repeat: no-repeat; opacity: 0.12; pointer-events: none; filter: invert(1); }
+.subhero-content { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; }
+.subhero h1 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(46px, 6vw, 84px); line-height: 1.05; letter-spacing: -0.015em; margin: 28px 0 24px; color: var(--bone); max-width: 1000px; }
+.subhero h1 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--clay); }
+.subhero-rule { width: 64px; height: 1px; background: var(--gold); margin: 36px 0 28px; }
+.subhero p { max-width: 700px; font-family: var(--font-serif); font-style: italic; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.55; color: rgba(246,244,238,0.8); }
+
+/* WHY BRANDING */
+.why { padding: 110px 5vw; background: var(--bone); position: relative; overflow: hidden; }
+.why::before { content: ''; position: absolute; top: -10%; left: -8%; width: 700px; height: 700px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.04; pointer-events: none; }
+.why-grid { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
+.why-text h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; margin: 18px 0 24px; color: var(--forest); }
+.why-text h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.why-text p { font-size: 17px; line-height: 1.7; color: var(--forest); margin-bottom: 22px; }
+.why-text p.standfirst { font-family: var(--font-serif); font-style: italic; font-size: 22px; line-height: 1.45; color: var(--sage); padding-left: 22px; border-left: 2px solid var(--clay); margin: 28px 0; }
+
+.benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.benefit { background: white; border: 1px solid var(--rule); border-top: 2px solid var(--gold); padding: 26px 24px 22px; }
+.benefit .num { font-family: var(--font-serif); font-style: italic; font-size: 24px; color: var(--gold); line-height: 1; margin-bottom: 8px; }
+.benefit h3 { font-size: 14px; font-weight: 500; color: var(--forest); margin-bottom: 10px; line-height: 1.3; }
+.benefit p { font-size: 13.5px; line-height: 1.55; color: var(--gray); margin: 0; }
+@media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; gap: 50px; } .benefits { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .benefits { grid-template-columns: 1fr; } }
+
+/* ANATOMY OF A BRANDED PROPERTY */
+.anatomy { padding: 110px 5vw; background: var(--mist); background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.85  0 0 0 0 0.82  0 0 0 0 0.75  0 0 0 0.06 0'/></filter><rect width='220' height='220' filter='url(%23n)' opacity='0.55'/></svg>"); background-blend-mode: multiply; }
+.anatomy-wrap { max-width: 1200px; margin: 0 auto; }
+.anatomy-head { max-width: 760px; margin-bottom: 60px; }
+.anatomy-head h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; margin: 18px 0 22px; color: var(--forest); }
+.anatomy-head h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.anatomy-head p { font-size: 17px; line-height: 1.7; color: var(--forest); }
+
+.deliverables { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.deliverable { background: white; padding: 32px 30px 28px; border-left: 3px solid var(--gold); }
+.deliverable h3 { font-family: var(--font-sans); font-weight: 500; font-size: 17px; color: var(--forest); margin-bottom: 12px; }
+.deliverable p { font-size: 14px; line-height: 1.6; color: var(--gray); margin-bottom: 0; }
+@media (max-width: 900px) { .deliverables { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .deliverables { grid-template-columns: 1fr; } }
+
+/* TIERS / PRICING */
+.tiers { padding: 120px 5vw; background: var(--forest); color: var(--bone); position: relative; overflow: hidden; }
+.tiers::before { content: ''; position: absolute; top: -10%; right: -8%; width: 700px; height: 700px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.07; pointer-events: none; filter: invert(1); }
+.tiers-wrap { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; }
+.tiers-head { text-align: center; margin-bottom: 60px; max-width: 760px; margin-left: auto; margin-right: auto; }
+.tiers-head h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(36px, 4vw, 56px); line-height: 1.1; margin: 22px 0 18px; }
+.tiers-head h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--clay); }
+.tiers-head p { font-family: var(--font-serif); font-style: italic; font-size: 17px; color: rgba(246,244,238,0.78); }
+
+.tier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.tier-card { background: rgba(246,244,238,0.04); border: 1px solid rgba(212,169,55,0.2); padding: 36px 32px 32px; display: flex; flex-direction: column; transition: border-color .3s ease; }
+.tier-card:hover { border-color: rgba(212,169,55,0.5); }
+.tier-card.featured { background: rgba(212,169,55,0.08); border-color: var(--gold); }
+.tier-name { font-family: var(--font-serif); font-style: italic; font-size: 26px; color: var(--bone); line-height: 1.15; margin-bottom: 8px; }
+.tier-sub { font-size: 12.5px; color: var(--clay); margin-bottom: 24px; line-height: 1.45; }
+.tier-price { font-family: var(--font-sans); font-weight: 300; font-size: 36px; color: var(--gold); letter-spacing: -0.01em; margin-bottom: 4px; }
+.tier-note { font-family: var(--font-serif); font-style: italic; font-size: 13px; color: rgba(246,244,238,0.6); margin-bottom: 24px; }
+.tier-rule { width: 32px; height: 1px; background: var(--gold); margin-bottom: 22px; }
+.tier-includes { list-style: none; margin: 0 0 28px; flex-grow: 1; }
+.tier-includes li { font-size: 14px; line-height: 1.55; color: rgba(246,244,238,0.85); padding: 9px 0; border-bottom: 1px solid rgba(246,244,238,0.08); display: flex; gap: 10px; }
+.tier-includes li:last-child { border-bottom: none; }
+.tier-includes li::before { content: '✓'; color: var(--gold); font-size: 12px; flex-shrink: 0; margin-top: 3px; }
+.tier-cta { display: inline-block; text-align: center; padding: 14px 24px; background: transparent; border: 1px solid var(--gold); color: var(--bone); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; transition: all .3s ease; }
+.tier-cta:hover { background: var(--gold); color: var(--forest); }
+.tier-card.featured .tier-cta { background: var(--gold); color: var(--forest); }
+.tier-card.featured .tier-cta:hover { background: var(--clay); border-color: var(--clay); }
+.tier-badge { background: var(--gold); color: var(--forest); display: inline-block; padding: 4px 10px; font-size: 9.5px; letter-spacing: 0.25em; text-transform: uppercase; font-weight: 600; margin-bottom: 12px; align-self: flex-start; }
+@media (max-width: 900px) { .tier-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+/* EXAMPLES GALLERY — image slots auto-load when files are dropped into Brand Kit/07_Branding_Work/ */
+.examples { padding: 110px 5vw; background: var(--bone); }
+.examples-wrap { max-width: 1280px; margin: 0 auto; }
+.examples-head { text-align: center; margin-bottom: 60px; max-width: 760px; margin-left: auto; margin-right: auto; }
+.examples-head h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; margin: 18px 0 22px; color: var(--forest); }
+.examples-head h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.examples-head p { font-size: 16px; line-height: 1.7; color: var(--gray); }
+.examples-section { margin-bottom: 60px; }
+.examples-section h3 { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); font-weight: 500; }
+.example-grid { display: grid; gap: 16px; }
+.example-grid.three { grid-template-columns: repeat(3, 1fr); }
+.example-grid.four { grid-template-columns: repeat(4, 1fr); }
+.example-grid.three-up { grid-template-columns: 2fr 1fr 1fr; gap: 16px; }
+.ex-fig { background: linear-gradient(135deg, var(--mist) 0%, var(--sage) 100%); aspect-ratio: 4/3; display: flex; align-items: flex-end; justify-content: center; padding: 24px; color: var(--bone); font-family: var(--font-serif); font-style: italic; font-size: 13px; text-align: center; line-height: 1.4; position: relative; overflow: hidden; }
+.ex-fig img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.ex-fig .placeholder-label { position: relative; z-index: 2; padding: 20px; max-width: 88%; }
+.ex-fig .placeholder-label strong { display: block; font-family: var(--font-sans); font-style: normal; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; font-weight: 600; }
+.ex-fig img + .placeholder-label { display: none; }
+.ex-fig.tall { aspect-ratio: 3/4; }
+.ex-fig.wide { aspect-ratio: 16/10; }
+@media (max-width: 900px) { .example-grid.three, .example-grid.four, .example-grid.three-up { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .example-grid.three, .example-grid.four, .example-grid.three-up { grid-template-columns: 1fr; } }
+
+/* PROCESS */
+.process { padding: 110px 5vw; background: var(--bone); border-top: 1px solid var(--rule); }
+.process-wrap { max-width: 1100px; margin: 0 auto; }
+.process-head { margin-bottom: 50px; max-width: 760px; }
+.process-head h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; margin: 18px 0 22px; color: var(--forest); }
+.process-head h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; }
+.process-steps::before { content: ''; position: absolute; top: 24px; left: 5%; right: 5%; height: 1px; background: var(--rule); }
+.process-step { padding-top: 56px; position: relative; }
+.process-step::before { content: ''; position: absolute; top: 18px; left: 0; width: 14px; height: 14px; background: var(--gold); border-radius: 50%; border: 3px solid var(--bone); }
+.process-step .step-num { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 8px; }
+.process-step h4 { font-size: 16px; font-weight: 500; color: var(--forest); margin-bottom: 8px; line-height: 1.3; }
+.process-step p { font-size: 13.5px; line-height: 1.55; color: var(--gray); margin: 0; }
+@media (max-width: 900px) { .process-steps { grid-template-columns: 1fr 1fr; } .process-steps::before { display: none; } }
+@media (max-width: 600px) { .process-steps { grid-template-columns: 1fr; } }
+
+/* FAQ */
+.faq { padding: 110px 5vw; background: var(--bone); border-top: 1px solid var(--rule); }
+.faq-wrap { max-width: 920px; margin: 0 auto; }
+.faq-head { text-align: center; margin-bottom: 50px; }
+.faq-head h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.4vw, 50px); line-height: 1.15; margin: 18px 0 0; color: var(--forest); }
+.faq-head h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.faq-item { border-top: 1px solid var(--rule); padding: 24px 0; }
+.faq-item:last-child { border-bottom: 1px solid var(--rule); }
+.faq-item summary { font-size: clamp(18px, 1.6vw, 21px); font-weight: 400; color: var(--forest); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 24px; line-height: 1.4; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-family: var(--font-serif); font-size: 28px; font-weight: 300; color: var(--gold); flex-shrink: 0; }
+.faq-item[open] summary::after { content: '–'; }
+.faq-item summary:hover { color: var(--clay); transition: color .3s; }
+.faq-answer { margin-top: 16px; font-size: 16px; line-height: 1.7; color: var(--gray); }
+
+/* APPLY CTA */
+.apply { padding: 130px 5vw; background: var(--clay); color: var(--forest); text-align: center; position: relative; overflow: hidden; }
+.apply::before { content: ''; position: absolute; inset: 0; background-image: var(--tree-rings); background-size: 900px 900px; background-position: center; background-repeat: no-repeat; opacity: 0.06; pointer-events: none; }
+.apply-inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
+.apply h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(36px, 5vw, 64px); line-height: 1.1; margin: 22px 0 24px; }
+.apply h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.apply p { font-size: 17px; line-height: 1.7; color: var(--forest); margin-bottom: 32px; max-width: 540px; margin-left: auto; margin-right: auto; }
+.apply .cta { display: inline-block; padding: 18px 38px; background: var(--forest); color: var(--bone); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; transition: background .3s ease; }
+.apply .cta:hover { background: var(--ink); }
+
+footer { background: var(--forest); color: var(--bone); padding: 70px 5vw 32px; }
+.foot-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.foot-logo { width: 110px; filter: brightness(2); }
+.foot-links { display: flex; gap: 28px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; flex-wrap: wrap; }
+.foot-links a { color: rgba(246,244,238,0.7); }
+.foot-links a:hover { color: var(--clay); }
+.foot-copy { font-size: 12px; color: rgba(246,244,238,0.5); margin-top: 30px; text-align: center; padding-top: 24px; border-top: 1px solid rgba(246,244,238,0.1); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" aria-label="Yellowwood Atelier home">
+    <img src="assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier" class="logo-img"/>
+  </a>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="design.html">Design</a></li>
+    <li><a href="branding.html" class="active">Branding</a></li>
+    <li><a href="investment.html">Investment</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="index.html#apply">Apply</a></li>
+  <li><a href="setup-checklist.html">Checklist</a></li>
+    </ul>
+</nav>
+
+<!-- ─── SUBHERO ─────────────────────────────────── -->
+<header class="subhero">
+  <div class="subhero-content">
+    <span class="eyebrow" style="color: var(--gold);">Property Branding</span>
+    <h1>Branding the property &mdash; <em>not just the building</em>.</h1>
+    <div class="subhero-rule"></div>
+    <p>The properties guests photograph, post about, and remember don't have a number on Airbnb. They have a name. A wordmark on the welcome book. A monogrammed robe in the bathroom. A direct-booking site that looks like a real business. Property branding is the layer that turns a short-term rental into a brand, and a brand into compounding bookings.</p>
+  </div>
+</header>
+
+<!-- ─── PRE-BOOKING EXPERIENCE ──────────────── -->
+<section style="padding: 100px 5vw; background: var(--bone); border-bottom: 1px solid var(--rule); position: relative; overflow: hidden;">
+  <div style="position: absolute; top: -15%; right: -8%; width: 600px; height: 600px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.05; pointer-events: none;"></div>
+  <div style="max-width: 920px; margin: 0 auto; position: relative; z-index: 2; text-align: center;">
+    <span class="eyebrow">Where the stay actually starts</span>
+    <h2 style="font-family: var(--font-sans); font-weight: 300; font-size: clamp(36px, 4.2vw, 60px); line-height: 1.1; color: var(--forest); margin: 20px auto 28px; max-width: 820px;">The guest experience begins long before <em style="font-family: var(--font-serif); font-style: italic; font-weight: 400;">anyone books</em>.</h2>
+    <p style="font-family: var(--font-serif); font-style: italic; font-size: clamp(18px, 1.6vw, 23px); line-height: 1.55; color: var(--gray); max-width: 720px; margin: 0 auto 26px;">It starts at the listing photograph. The property name. The first scroll past on social. The friend's Instagram story they saw last weekend. The brand is the entire pre-booking funnel, working without the owner ever in the room.</p>
+    <p style="font-size: 16.5px; line-height: 1.7; color: var(--forest); max-width: 720px; margin: 0 auto;">A property without a brand asks the platform to do all the work: surface me, rank me, recommend me, hope someone clicks. A property <em style="font-family: var(--font-serif); font-style: italic;">with</em> a brand does its own work. Guests find it on social. Friends recommend it by name. Press writes it up. Past guests come back. By the time someone is on the booking screen, the decision has already been made, often days before. That's what property branding builds.</p>
+  </div>
+</section>
+
+<!-- ─── WHY BRANDING ─────────────────────────── -->
+<section class="why">
+  <div class="why-grid">
+    <div class="why-text">
+      <span class="eyebrow">The case</span>
+      <h2>Why an STR needs a <em>real brand</em>.</h2>
+      <p>Most short-term rentals compete on price, photos, and platform algorithm. The ones that compound (the ones that build a real audience, drive direct bookings, and command a premium) do something different. They behave like brands.</p>
+      <p class="standfirst">Branded properties book direct. Unbranded properties stay dependent on the OTA.</p>
+      <p>I spent thirteen years as the chief marketing officer of a national brand before I started designing short-term rentals. The marketing math is the same in both worlds: a property with a name, an identity, and a consistent guest experience generates measurable lift on every line of the P&amp;L.</p>
+      <p>This is the service that makes that translation. Property naming, identity system, in-property signage, welcome books, branded merch, and the visual style for a direct-booking site, designed by a former CMO who knows how to make brands move bookings.</p>
+    </div>
+
+    <div class="benefits">
+      <div class="benefit">
+        <div class="num">i</div>
+        <h3>Direct bookings, not OTA dependency.</h3>
+        <p>Branded properties build their own audience and book direct over time, dropping platform fees and rate-controlling the relationship.</p>
+      </div>
+      <div class="benefit">
+        <div class="num">ii</div>
+        <h3>Premium pricing legitimacy.</h3>
+        <p>A property with a name and identity reads as a real business. Guests pay more for "Lazy Lariat" than for "3BR Cabin in Broken Bow."</p>
+      </div>
+      <div class="benefit">
+        <div class="num">iii</div>
+        <h3>Social-share moments.</h3>
+        <p>Branded merch (mugs, robes, totes, welcome cards) gets photographed and posted by guests. Free, ongoing, on-platform marketing.</p>
+      </div>
+      <div class="benefit">
+        <div class="num">iv</div>
+        <h3>Repeat-guest behavior.</h3>
+        <p>Guests remember branded properties, follow them on social, return for second visits, and recommend them by name.</p>
+      </div>
+      <div class="benefit">
+        <div class="num">v</div>
+        <h3>Editorial &amp; press coverage.</h3>
+        <p>Named, branded properties get featured in design publications and travel round-ups. "Property #14743" doesn't make the list.</p>
+      </div>
+      <div class="benefit">
+        <div class="num">vi</div>
+        <h3>Long-term equity asset.</h3>
+        <p>A property with a brand becomes a sellable asset on its own. The brand commands a premium when the property changes hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ANATOMY ─────────────────────────────── -->
+<section class="anatomy">
+  <div class="anatomy-wrap">
+    <div class="anatomy-head">
+      <span class="eyebrow">What's in the service</span>
+      <h2>The anatomy of a <em>branded property</em>.</h2>
+      <p>A complete property brand is more than a logo. The full identity reaches the guest at every touchpoint, from the moment they search for a place to stay to the moment they post a photo from inside it. Yellowwood Atelier designs the whole stack.</p>
+    </div>
+
+    <div class="deliverables">
+      <div class="deliverable">
+        <h3>Property Naming</h3>
+        <p>Strategic naming that captures the property's character, market positioning, and search-friendliness. We test, we shortlist, we commit.</p>
+      </div>
+      <div class="deliverable">
+        <h3>Wordmark &amp; Logo System</h3>
+        <p>Primary wordmark, secondary lockup, monogram, color and mono variants. Delivered in every format you'll need (PNG, SVG, PDF, AI).</p>
+      </div>
+      <div class="deliverable">
+        <h3>Color &amp; Type System</h3>
+        <p>A palette and typography system that extends across every brand artifact. Drawn from the property's design language, not pasted from a stock kit.</p>
+      </div>
+      <div class="deliverable">
+        <h3>In-Property Signage</h3>
+        <p>Welcome sign, room labels, wayfinding, hot-tub rules, wifi cards. Brass, wood, or printed depending on the property's tone.</p>
+      </div>
+      <div class="deliverable">
+        <h3>Branded Merch System</h3>
+        <p>Mugs, robes, totes, coasters, matches, notecards. Designed and ready for production with your selected vendor.</p>
+      </div>
+      <div class="deliverable">
+        <h3>Social Handles &amp; Bios</h3>
+        <p>Instagram and Pinterest handle research, bio copy, profile photos, and a starter content kit so you launch with the brand intact.</p>
+      </div>
+      <div class="deliverable">
+        <h3>Direct-Booking Site Style</h3>
+        <p>Visual style guide and design system for a direct-booking site, ready to hand off to Yellowwood Properties or your developer.</p>
+      </div>
+      <div class="deliverable">
+        <h3>Brand Standards Doc</h3>
+        <p>A short, working brand guidelines document so anyone touching the brand (cleaners, photographers, vendors, future you) uses it correctly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TWO PATHS TO COMMISSION (modular) ──────── -->
+<section style="padding: 100px 5vw; background: var(--bone); border-top: 1px solid var(--rule);">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <div style="text-align: center; max-width: 720px; margin: 0 auto 50px;">
+      <span class="eyebrow">Two paths to commission</span>
+      <h2 style="font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 50px); line-height: 1.1; color: var(--forest); margin: 18px 0 22px;">Bundle it with design, or <em style="font-family: var(--font-serif); font-style: italic; font-weight: 400;">add it on its own</em>.</h2>
+      <p style="font-size: 17px; line-height: 1.7; color: var(--gray);">The branding tier you commission is all-or-nothing. You can't pick parts of a tier, because the deliverables only work as a system. But how the engagement <em>arrives</em> is fully modular: bundle it into an Atelier Engagement during a property's design, or commission it standalone for a property that's already live.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;">
+      <div style="background: white; border: 1px solid var(--rule); border-left: 3px solid var(--gold); padding: 36px 36px 32px;">
+        <div style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 12px;">Path A &middot; Bundled</div>
+        <h3 style="font-family: var(--font-sans); font-weight: 400; font-size: 22px; color: var(--forest); margin-bottom: 14px; line-height: 1.3;">Inside an Atelier Engagement.</h3>
+        <p style="font-size: 15px; line-height: 1.6; color: var(--gray); margin-bottom: 18px;">The most common path. Branding gets specified alongside the interior design from Phase 1. The property name, identity, signage, and merch are designed to extend the visual language already being built in the rooms, and to launch in lockstep with photography and the listing.</p>
+        <p style="font-size: 13.5px; line-height: 1.55; color: var(--forest); margin-bottom: 0;"><strong>Best for:</strong> properties currently in design with Yellowwood Atelier, or owners commissioning a full Atelier Engagement.</p>
+      </div>
+      <div style="background: white; border: 1px solid var(--rule); border-left: 3px solid var(--clay); padding: 36px 36px 32px;">
+        <div style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--clay); font-weight: 500; margin-bottom: 12px;">Path B &middot; &Agrave; la carte</div>
+        <h3 style="font-family: var(--font-sans); font-weight: 400; font-size: 22px; color: var(--forest); margin-bottom: 14px; line-height: 1.3;">For properties already live.</h3>
+        <p style="font-size: 15px; line-height: 1.6; color: var(--gray); margin-bottom: 18px;">A standalone branding engagement for a property that's already designed and operating, including properties someone else designed. Yellowwood Atelier brings the brand layer to a property that has the bones but is missing the identity, the welcome book, and the signage.</p>
+        <p style="font-size: 13.5px; line-height: 1.55; color: var(--forest); margin-bottom: 0;"><strong>Best for:</strong> currently-listed properties looking to lift ADR, drive direct bookings, or rebrand for a refresh / relaunch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TIERS / PRICING ──────────────────────── -->
+<section class="tiers" id="tiers">
+  <div class="tiers-wrap">
+    <div class="tiers-head">
+      <span class="eyebrow" style="color: var(--gold);">Three tiers</span>
+      <h2>Choose the depth of <em>brand</em> the property needs.</h2>
+      <p>Each tier is a complete system. You commission a tier, you get everything in it. The same tiers apply whether you're bundling with an Atelier Engagement (Path A) or commissioning &agrave; la carte (Path B).</p>
+    </div>
+
+    <div class="tier-grid">
+      <div class="tier-card">
+        <div class="tier-name">Property Naming + Wordmark</div>
+        <div class="tier-sub">For owners who already have an operator and just need the brand starting point</div>
+        <div class="tier-price">$3,500</div>
+        <div class="tier-note">starting investment</div>
+        <div class="tier-rule"></div>
+        <ul class="tier-includes">
+          <li>Strategic property naming (3 directions, 1 chosen)</li>
+          <li>Primary wordmark in 2 file formats</li>
+          <li>One color + mono variant</li>
+          <li>One welcome card design</li>
+          <li>Two rounds of revision</li>
+        </ul>
+        <a href="index.html#apply" class="tier-cta">Apply</a>
+      </div>
+
+      <div class="tier-card featured">
+        <span class="tier-badge">Most chosen</span>
+        <div class="tier-name">Property Brand Identity</div>
+        <div class="tier-sub">A complete identity system, the standard tier most owners commission</div>
+        <div class="tier-price">$5,500</div>
+        <div class="tier-note">starting investment</div>
+        <div class="tier-rule"></div>
+        <ul class="tier-includes">
+          <li>Property naming + full wordmark system</li>
+          <li>Color palette + typography system</li>
+          <li>Welcome book design (15&ndash;25 pages)</li>
+          <li>In-property signage spec (wayfinding, room labels, welcome)</li>
+          <li>Social handles + bio copy</li>
+          <li>Brand standards working doc</li>
+          <li>Three rounds of revision</li>
+        </ul>
+        <a href="index.html#apply" class="tier-cta">Apply</a>
+      </div>
+
+      <div class="tier-card">
+        <div class="tier-name">Brand + Direct-Booking Site Style</div>
+        <div class="tier-sub">Everything in Brand Identity plus the visual system for a direct-booking site</div>
+        <div class="tier-price">$8,000</div>
+        <div class="tier-note">starting investment</div>
+        <div class="tier-rule"></div>
+        <ul class="tier-includes">
+          <li>Everything in Property Brand Identity</li>
+          <li>Direct-booking site visual style guide</li>
+          <li>Landing-page design (homepage, booking, about)</li>
+          <li>Hand-off-ready spec for Yellowwood Properties or your developer</li>
+          <li>Branded merch concepts (mug, robe, tote, coaster, notecard)</li>
+          <li>Three rounds of revision</li>
+        </ul>
+        <a href="index.html#apply" class="tier-cta">Apply</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROPERTY BRANDS — repeatable card: Hero · Identity · Brand-in-action ═══ -->
+<style>
+/* Section frame */
+.prop-section { background: var(--bone); padding: 80px 0 100px; }
+.prop-section-intro {
+  max-width: 1200px; margin: 0 auto 64px; padding: 0 5vw; text-align: center;
+}
+.prop-section-intro .eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); font-weight: 600;
+}
+.prop-section-intro h2 {
+  font-family: var(--font-sans); font-weight: 300;
+  font-size: clamp(34px, 4vw, 52px); line-height: 1.1; color: var(--forest);
+  margin: 14px 0 18px; letter-spacing: -0.01em;
+}
+.prop-section-intro h2 em { font-family: var(--font-serif); font-style: italic; color: var(--gold); }
+.prop-section-intro p {
+  font-size: 16px; line-height: 1.7; color: var(--gray);
+  max-width: 640px; margin: 0 auto;
+}
+
+/* The repeatable card */
+.prop-card {
+  max-width: 1200px; margin: 0 auto 72px; padding: 0 5vw;
+}
+.prop-card:last-child { margin-bottom: 0; }
+
+/* Header bar */
+.prop-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px 22px;
+  padding-bottom: 18px; margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.prop-head .num {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 14px; color: var(--gold); letter-spacing: 0.05em;
+}
+.prop-head .name {
+  font-family: var(--font-sans); font-weight: 300;
+  font-size: clamp(28px, 3.2vw, 40px); line-height: 1; color: var(--forest);
+  letter-spacing: -0.01em;
+}
+.prop-head .name em { font-family: var(--font-serif); font-style: italic; color: var(--gold); font-weight: 500; }
+.prop-head .loc {
+  font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--gray); font-weight: 500;
+}
+.prop-head .path {
+  font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--bone); background: var(--forest); padding: 5px 11px;
+  font-weight: 600; align-self: center;
+}
+.prop-head .path.b { background: var(--clay); color: var(--forest); }
+.prop-head .path.dev { background: var(--mist); color: var(--forest); }
+.prop-head .case {
+  margin-left: auto; font-size: 10px; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--gold);
+  border-bottom: 1px solid var(--gold); padding-bottom: 4px; font-weight: 600;
+}
+.prop-head .case:hover { color: var(--forest); border-color: var(--forest); }
+
+/* Hero + Identity panel (2-column) */
+.prop-body {
+  display: grid; grid-template-columns: 1.5fr 1fr; gap: 0;
+  background: white; border: 1px solid var(--rule);
+}
+.prop-hero {
+  background: var(--ink); overflow: hidden; min-height: 460px;
+  display: flex; align-items: center; justify-content: center;
+}
+.prop-hero img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  min-height: 460px;
+}
+.prop-identity {
+  display: grid; grid-template-rows: auto 1fr auto;
+}
+/* Photo-through wordmark panel — single-tone cream logo over moody property photo (guidebook cover treatment) */
+.prop-wordmark {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 300px; padding: 44px 32px; border-bottom: 1px solid var(--rule);
+  position: relative; overflow: hidden;
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+  color: #F0EAD6; text-align: center; gap: 14px;
+}
+.prop-wordmark::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(15,20,25,0.30) 0%, rgba(31,45,32,0.55) 100%);
+}
+.prop-wordmark > * { position: relative; z-index: 2; }
+.prop-wordmark img {
+  max-width: 82%; max-height: 150px; object-fit: contain; display: block;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.28));
+}
+.prop-wordmark .wm-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase;
+  color: #E4C87A; font-weight: 500;
+}
+.prop-wordmark .wm-loc {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 15px; color: rgba(240,234,214,0.9); letter-spacing: 0.02em;
+}
+
+/* Editorial refinements */
+.prop-card { margin-bottom: 110px; }
+.prop-card:last-child { margin-bottom: 0; }
+.prop-head { padding-bottom: 22px; margin-bottom: 32px; }
+.prop-head .name { font-size: clamp(30px, 3.6vw, 46px); letter-spacing: -0.015em; }
+.prop-body { border: none; background: transparent; box-shadow: 0 1px 0 rgba(31,45,32,0.04); }
+.prop-hero { border-radius: 2px; min-height: 520px; }
+.prop-hero img { min-height: 520px; }
+.prop-identity { background: white; padding: 0; }
+.prop-meta { padding: 40px 40px 28px; }
+.prop-meta .meta-row { margin-bottom: 28px; }
+.prop-meta .concept { font-size: 19px; line-height: 1.35; }
+.prop-meta .icp { font-size: 14.5px; line-height: 1.65; }
+.prop-palette span { aspect-ratio: 3/1; }
+.prop-applied { margin-top: 18px; gap: 18px; }
+.prop-applied figure { border: none; box-shadow: 0 1px 3px rgba(31,45,32,0.06); }
+.prop-applied figcaption { padding: 14px 18px 16px; border-top: 1px solid rgba(31,45,32,0.06); }
+.prop-attrib { margin-top: 22px; text-align: right; font-size: 13.5px; }
+.prop-hero.plan-hero {
+  background: var(--bone); padding: 0; overflow: hidden;
+}
+.prop-hero.plan-hero img { object-fit: contain; width: 100%; height: 100%; padding: 30px; }
+
+.prop-meta { padding: 32px 32px 24px; }
+.prop-meta .meta-row { margin-bottom: 22px; }
+.prop-meta .meta-row:last-child { margin-bottom: 0; }
+.prop-meta .meta-lbl {
+  font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 8px; display: block; font-weight: 600;
+}
+.prop-meta .concept {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 17px; line-height: 1.4; color: var(--forest);
+}
+.prop-meta .icp { font-size: 14px; line-height: 1.6; color: var(--gray); }
+
+.prop-palette {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 0;
+  border-top: 1px solid var(--rule);
+}
+.prop-palette span {
+  display: block; aspect-ratio: 2/1; position: relative;
+}
+.prop-palette span::after {
+  content: attr(data-hex); position: absolute; bottom: 4px; left: 6px;
+  font-size: 8px; letter-spacing: 0.06em; font-family: monospace;
+  color: rgba(255,255,255,0.85); font-weight: 600; opacity: 0;
+  transition: opacity 0.2s;
+}
+.prop-palette span.light::after { color: rgba(0,0,0,0.75); }
+.prop-palette span:hover::after { opacity: 1; }
+
+/* Brand-in-action: 3-column figure row */
+.prop-applied {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+  margin-top: 14px;
+}
+.prop-applied figure {
+  margin: 0; background: white; border: 1px solid var(--rule);
+  display: flex; flex-direction: column;
+}
+.prop-applied figure img {
+  width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;
+}
+.prop-applied figure.contain { background: var(--bone); }
+.prop-applied figure.contain img { object-fit: contain; padding: 16px; aspect-ratio: 4/3; }
+.prop-applied figcaption {
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gray); padding: 12px 14px 14px; font-weight: 600;
+  border-top: 1px solid var(--rule);
+}
+.prop-applied figcaption strong { color: var(--forest); font-weight: 700; }
+
+/* Space Cowboy in-dev variant — cosmic hero placeholder */
+.prop-hero.placeholder {
+  background: linear-gradient(135deg, #0F1419 0%, #1B2A4E 45%, #5D3FD3 100%);
+  position: relative;
+  flex-direction: column;
+  padding: 60px 40px;
+}
+.prop-hero.placeholder .ph-label { color: rgba(164,214,94,0.85) !important; }
+.prop-hero.placeholder::after {
+  content: ""; position: absolute; bottom: 30px; right: 30px;
+  width: 80px; height: 80px;
+  background: radial-gradient(circle, #F26B38 0%, transparent 70%);
+  opacity: 0.4; border-radius: 50%;
+}
+.prop-hero.placeholder::before {
+  content: ""; position: absolute; inset: 0; opacity: 0.4;
+  background-image: radial-gradient(1px 1px at 12% 18%, white, transparent),
+                    radial-gradient(1.5px 1.5px at 28% 42%, white, transparent),
+                    radial-gradient(1px 1px at 55% 22%, white, transparent),
+                    radial-gradient(2px 2px at 71% 65%, white, transparent),
+                    radial-gradient(1px 1px at 89% 38%, white, transparent),
+                    radial-gradient(1.5px 1.5px at 42% 78%, white, transparent),
+                    radial-gradient(1px 1px at 18% 88%, white, transparent),
+                    radial-gradient(2px 2px at 95% 15%, white, transparent);
+}
+.prop-hero.placeholder img {
+  max-width: 78%; max-height: 320px; width: auto; height: auto;
+  object-fit: contain; min-height: 0; position: relative; z-index: 2;
+  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.4));
+}
+.prop-hero.placeholder .ph-label {
+  position: relative; z-index: 2; margin-top: 28px;
+  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7); font-weight: 600;
+}
+
+/* Attribution line for Path B */
+.prop-attrib {
+  margin-top: 14px; font-family: var(--font-serif); font-style: italic;
+  font-size: 13px; color: var(--gray); padding: 0 4px;
+}
+.prop-attrib a { color: var(--forest); border-bottom: 1px solid var(--gold); }
+
+@media (max-width: 900px) {
+  .prop-body { grid-template-columns: 1fr; }
+  .prop-applied { grid-template-columns: 1fr 1fr; }
+  .prop-hero, .prop-hero img { min-height: 320px; }
+  .prop-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .prop-head .case { margin-left: 0; }
+}
+@media (max-width: 600px) {
+  .prop-applied { grid-template-columns: 1fr; }
+}
+</style>
+
+<section class="prop-section" id="property-brands">
+  <div class="prop-section-intro">
+    <span class="eyebrow">Property brands</span>
+    <h2>Three properties. Three <em>complete brand systems.</em></h2>
+    <p>Each card: the signature moment, the wordmark laid across a moody property shot, the concept, the guest it was built for, and the palette. Same anatomy, three different worlds.</p>
+  </div>
+
+
+  <!-- ════════ 1 · LAZY LARIAT ════════ -->
+  <article class="prop-card">
+    <header class="prop-head">
+      <span class="num">01</span>
+      <span class="name">The <em>Lazy Lariat</em></span>
+      <span class="loc">Broken Bow, OK</span>
+      <span class="path">Path A &middot; design + brand</span>
+      <a href="portfolio/cabin-broken-bow.html" class="case">Read the case study &rarr;</a>
+    </header>
+
+    <div class="prop-body">
+      <div class="prop-hero">
+        <img src="assets/lazy-lariat_pool-deck-sunset-red-umbrellas_broken-bow-ok.jpg" alt="The Lazy Lariat pool deck at sunset with red umbrellas, cabin lit up, string lights, Broken Bow Oklahoma luxury cabin and pool short-term rental"/>
+      </div>
+      <div class="prop-identity">
+        <div class="prop-wordmark" style="background-image: url('assets/lazy-lariat_aerial-cabin-twilight_broken-bow-ok.jpg');">
+          <span class="wm-eyebrow">Ranch-style luxury in the pines</span>
+          <img src="assets/lazy-lariat_wordmark-horizontal-cream-single-tone_transparent.png" alt="The Lazy Lariat wordmark in cream, over a twilight cabin in the pines, Broken Bow Oklahoma"/>
+          <span class="wm-loc">Broken Bow &middot; Hochatown, Oklahoma</span>
+        </div>
+        <div class="prop-meta">
+          <div class="meta-row">
+            <span class="meta-lbl">Concept</span>
+            <p class="concept">Luxury cabin &amp; pool with a Western Saloon soul. Modern western with no kitsch.</p>
+          </div>
+          <div class="meta-row">
+            <span class="meta-lbl">For</span>
+            <p class="icp">Multi-generational families, friend groups, anniversary trips.</p>
+          </div>
+        </div>
+        <div class="prop-palette" aria-label="Lazy Lariat palette">
+          <span style="background:#D03C33" data-hex="#D03C33"></span>
+          <span style="background:#3B3735" data-hex="#3B3735"></span>
+          <span style="background:#D5CCC2" class="light" data-hex="#D5CCC2"></span>
+          <span style="background:#F2B01E" class="light" data-hex="#F2B01E"></span>
+          <span style="background:#598C74" data-hex="#598C74"></span>
+          <span style="background:#234058" data-hex="#234058"></span>
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+
+  <!-- ════════ 2 · GILDED SPUR ════════ -->
+  <article class="prop-card">
+    <header class="prop-head">
+      <span class="num">02</span>
+      <span class="name"><em>Gilded Spur</em></span>
+      <span class="loc">Hochatown, OK</span>
+      <span class="path">Path A &middot; design + brand rebuild</span>
+      <a href="portfolio/gilded-spur.html" class="case">Read the case study &rarr;</a>
+    </header>
+
+    <div class="prop-body">
+      <div class="prop-hero">
+        <img src="assets/gilded-spur_breakfast-gs-branded-plate-mug_hochatown-ok.jpg" alt="Gilded Spur branded ceramic plate and yellow mug at breakfast with granola, croissant, and fruit — GS crest signage on the mural wall behind, Hochatown Oklahoma equestrian-luxury cabin"/>
+      </div>
+      <div class="prop-identity">
+        <div class="prop-wordmark" style="background-image: url('assets/gilded-spur_exterior-dusk-aerial.jpg');">
+          <span class="wm-eyebrow">Equestrian luxury in Hochatown</span>
+          <img src="assets/gilded-spur_wordmark-cream-single-tone_transparent.png" alt="Gilded Spur wordmark with horse-in-motion mark, cream single-tone, over an equestrian-luxury cabin at dusk, Hochatown Oklahoma"/>
+          <span class="wm-loc">Hochatown &middot; Broken Bow, Oklahoma</span>
+        </div>
+        <div class="prop-meta">
+          <div class="meta-row">
+            <span class="meta-lbl">Concept</span>
+            <p class="concept">Rustic. Horses. Refined. Private. With a bit of unexpected funk.</p>
+          </div>
+          <div class="meta-row">
+            <span class="meta-lbl">For</span>
+            <p class="icp">Couples on weekend retreats. Wellness-focused adults. Double-date trips.</p>
+          </div>
+        </div>
+        <div class="prop-palette" aria-label="Gilded Spur palette">
+          <span style="background:#8D6949" data-hex="#8D6949"></span>
+          <span style="background:#937D68" data-hex="#937D68"></span>
+          <span style="background:#A3B5A0" class="light" data-hex="#A3B5A0"></span>
+          <span style="background:#A7BFC7" class="light" data-hex="#A7BFC7"></span>
+          <span style="background:#C39F61" class="light" data-hex="#C39F61"></span>
+          <span style="background:#323F36" data-hex="#323F36"></span>
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+
+  <!-- ════════ 3 · THE WILD PELICAN ════════ -->
+  <article class="prop-card">
+    <header class="prop-head">
+      <span class="num">03</span>
+      <span class="name">The <em>Wild Pelican</em></span>
+      <span class="loc">Bradenton, FL</span>
+      <span class="path b">Path B &middot; brand only</span>
+    </header>
+
+    <div class="prop-body">
+      <div class="prop-hero">
+        <img src="assets/Wild Pelican Branded Mini Golf Sign.png" alt="The Wild Pelican Canopy Mini Golf branded sign installed on a clean cedar fence at sunset, two warm solar wall lights glowing above the sign, palm tree silhouetted against a pink and orange dusk sky, Bradenton Florida family vacation rental amenity"/>
+      </div>
+      <div class="prop-identity">
+        <div class="prop-wordmark" style="background-image: url('assets/dsc04589_164.jpg');">
+          <span class="wm-eyebrow">A family vacation, only wilder</span>
+          <img src="assets/wild-pelican_wordmark-cream-single-tone_transparent.png" alt="The Wild Pelican wordmark in cream single-tone, over the bird-mural game room, Bradenton Florida family vacation rental"/>
+          <span class="wm-loc">Bradenton, Florida</span>
+        </div>
+        <div class="prop-meta">
+          <div class="meta-row">
+            <span class="meta-lbl">Concept</span>
+            <p class="concept">Family-friendly beach rental with colorful, whimsical design. Built for the wild child in every family.</p>
+          </div>
+          <div class="meta-row">
+            <span class="meta-lbl">For</span>
+            <p class="icp">Families with kids who want the kids to actually be kids. Multi-day group trips.</p>
+          </div>
+        </div>
+        <div class="prop-palette" aria-label="Wild Pelican palette">
+          <span style="background:#F2C44A" class="light" data-hex="#F2C44A"></span>
+          <span style="background:#2D6873" data-hex="#2D6873"></span>
+          <span style="background:#E07E61" class="light" data-hex="#E07E61"></span>
+          <span style="background:#E6A8A4" class="light" data-hex="#E6A8A4"></span>
+          <span style="background:#F4F1EA" class="light" data-hex="#F4F1EA"></span>
+          <span style="background:#46723F" data-hex="#46723F"></span>
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+
+  <!-- Space Cowboy card removed from public site — still in development.
+       Assets preserved at Brand Kit/07_Branding_Work/property-brands/space-cowboy/.
+       Restore when the property is closer to launch. -->
+
+</section>
+
+<!-- ─── PROCESS ────────────────────────────── -->
+<section class="process">
+  <div class="process-wrap">
+    <div class="process-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Four steps from <em>blank to branded</em>.</h2>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">Phase 1</div>
+        <h4>Strategy &amp; naming</h4>
+        <p>Property archetype, target guest, three name directions, market check, naming locked.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">Phase 2</div>
+        <h4>Identity design</h4>
+        <p>Wordmark, color and type system, voice samples. Two design rounds, one approval.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">Phase 3</div>
+        <h4>Application</h4>
+        <p>Welcome book, in-property signage, social handles, branded merch concepts. Production-ready files.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">Phase 4</div>
+        <h4>Handoff</h4>
+        <p>Brand standards doc, source files, vendor recommendations. You can run the brand from here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ────────────────────────────────── -->
+<section class="faq">
+  <div class="faq-wrap">
+    <div class="faq-head">
+      <span class="eyebrow">Common questions</span>
+      <h2>Branding, <em>answered</em>.</h2>
+    </div>
+
+    <details class="faq-item">
+      <summary>Do I need property branding if my STR is already booking well?</summary>
+      <div class="faq-answer">If your property is booking well and the rate is where you want it, you may not need branding for the next twelve months. But every well-booked property hits a ceiling that a brand pushes through: the ceiling where guests still call you &ldquo;the cabin in Broken Bow with the green kitchen&rdquo; instead of by name. Branding builds the shift from anonymous well-booked listing to recognizable, repeat-bookable, sellable asset.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What does property branding actually do for my ADR?</summary>
+      <div class="faq-answer">A branded property reads as a more legitimate, premium, considered offering. Across Yellowwood Atelier's pipeline and industry data, branded properties typically command a measurable premium over equivalent un-branded listings, usually because the brand justifies the photography, the welcome book, the merch, and the direct-booking site that surround it. Branding is the multiplier on the design work; it doesn't replace good design, but it makes good design earn more.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can I just hire a freelancer to design a logo?</summary>
+      <div class="faq-answer">You can. The logo will probably look fine. But a logo isn't a brand. The brand is the identity system, the welcome book, the signage, the merch concepts, the social handles, and the brand standards doc that holds it all together. A freelancer logo does the wordmark; Property Branding does the system. You'll know the difference six months in when you need a new piece of signage and don't have a system to spec it from.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I have to commission Property Branding alongside an Atelier Engagement?</summary>
+      <div class="faq-answer">No. Property Branding is offered as a stand-alone engagement. You can commission it for a property Yellowwood Atelier didn't design. About a third of branding clients come this way, especially when an owner has an existing well-designed property that needs the identity layer it never got.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Will the brand work for a direct-booking site?</summary>
+      <div class="faq-answer">The Brand + Direct-Booking Site Style tier delivers a complete visual style guide and landing-page design ready to hand off to Yellowwood Properties or your developer. The tier below it delivers the brand identity but doesn't include the site design, though the brand is built to extend cleanly to a site if you commission one later.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Who actually produces the merch and signage?</summary>
+      <div class="faq-answer">Yellowwood Atelier delivers the design files and vendor recommendations. You (or your operator) places the production order with the recommended vendor, or your own preferred shop. We don't take procurement on branded merch the way we do on FF&amp;E. The lead times and minimums vary too widely. Everything is delivered production-ready, so the handoff is clean.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How long does Property Branding take?</summary>
+      <div class="faq-answer">A Property Naming + Wordmark engagement runs about 3&ndash;4 weeks. Property Brand Identity runs 6&ndash;8 weeks. Brand + Direct-Booking Site Style runs 8&ndash;10 weeks. Faster timelines are available for an expedite fee when the property's launch date demands it.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What about ongoing marketing after the brand launches?</summary>
+      <div class="faq-answer">Yellowwood Atelier builds the brand asset and runs the launch. What happens next is your call. Plenty of owners hire a dedicated STR marketing agency to run ongoing social, ads, and content month over month. Plenty of others choose to handle it themselves once the brand is built. And the strongest property brands quietly do their own work over time: branded properties accumulate organic reach, repeat guests, and direct bookings, which is the long-term play. The studio is agnostic about who runs your post-launch marketing. We focus on building a brand strong enough that the marketing has something real to work with.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can I commission Property Branding without committing to a design engagement?</summary>
+      <div class="faq-answer">Yes. That's Path B (&Agrave; la carte). Property Branding works as a stand-alone engagement for any short-term rental that's already designed, photographed, and operating. You don't have to be a Yellowwood Atelier interior design client to commission the brand layer.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ─── APPLY CTA ────────────────────────── -->
+<section class="apply">
+  <div class="apply-inner">
+    <span class="eyebrow">Ready</span>
+    <h2>Brand the property. <em>Then watch it move.</em></h2>
+    <p>Property Branding engagements are scoped per property. Application is free, response within 5 business days. Stand-alone or paired with an Atelier Engagement: both paths work.</p>
+    <a href="index.html#apply" class="cta">Apply for Property Branding</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <img class="foot-logo" src="assets/Yellowwood_Atelier_Horizontal_mono_bone_512.png" alt="Yellowwood Atelier"/>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="design.html">Design</a>
+      <a href="branding.html">Branding</a>
+      <a href="investment.html">Investment</a>
+      <a href="journal.html">Journal</a>
+      <a href="budget-estimator.html">Budget Estimator</a>
+      <a href="index.html#apply">Apply</a>
+    <

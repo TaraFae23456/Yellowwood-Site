@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>About — Yellowwood Atelier | Tara Sprakel, Founder & Principal Designer</title>
+<meta name="description" content="The studio behind Yellowwood Atelier. Led by Tara Sprakel, an award-winning former healthcare CMO turned operator-led short-term rental designer. Carrying her father's studio name forward into a new chapter of editorial STR design and property branding."/>
+<meta name="keywords" content="yellowwood atelier founder, tara sprakel designer, str interior designer, vacation rental design studio, operator-led design, hospitality interior designer, broken bow designer, oklahoma cabin designer"/>
+<link rel="canonical" href="https://atelier.yellowwoodre.com/about"/>
+
+<meta property="og:title" content="About — Yellowwood Atelier"/>
+<meta property="og:description" content="Meet Tara Sprakel: founder, principal designer, operator. The studio behind Yellowwood Atelier."/>
+<meta property="og:type" content="profile"/>
+<meta property="og:image" content="../../Brand%20Kit/06_Photography/Cabin_Broken_Bow/professional/lazy-lariat_great-room-mural-wide.jpg"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://atelier.yellowwoodre.com/about#page",
+      "name": "About Yellowwood Atelier",
+      "url": "https://atelier.yellowwoodre.com/about",
+      "description": "The studio and the founder behind Yellowwood Atelier."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://atelier.yellowwoodre.com/about#tara",
+      "name": "Tara Sprakel",
+      "jobTitle": "Founder & Principal Designer",
+      "worksFor": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://atelier.yellowwoodre.com/" },
+      "description": "Award-winning former CMO of a national healthcare brand. Two-time 40 Under 40 honoree. Operator of four short-term rentals. Founder of Yellowwood Atelier, an editorial short-term rental design studio."
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --forest: #253026; --bone: #F6F4EE; --gold: #D4A937; --clay: #DBA39D;
+  --sage: #69715E; --mist: #A7B6C2; --gray: #525C53; --rule: #E8E5DC; --ink: #1A1D1B;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  /* Tree-ring / topo background — algorithmically smoothed organic wood-grain pattern (Catmull-Rom auto-tangents). Lives at Brand Kit/04_Brand_Elements/SVG/TreeRings_v2.svg for reuse across all pages. */
+  --tree-rings: url("assets/TreeRings_v3.svg");
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); font-weight: 400; font-size: 16px; line-height: 1.55; color: var(--forest); background: var(--bone); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+/* Readability protection — gold text fails on clay & mist backgrounds. Covers both inline-style AND class-based backgrounds. */
+.scope .eyebrow,
+section[style*="background: var(--clay)"] .eyebrow,
+section[style*="background: var(--mist)"] .eyebrow,
+.narrative.mist .eyebrow,
+.narrative.clay .eyebrow,
+.apply .eyebrow,
+.cta-card .eyebrow { color: var(--forest); }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 22px 5vw; display: flex; justify-content: space-between; align-items: center; color: var(--forest); background: rgba(246,244,238,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+.logo-img { height: 50px; width: auto; }
+nav ul { list-style: none; display: flex; gap: 32px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 400; }
+nav ul a:hover { color: var(--clay); transition: color .3s; }
+nav ul a.active { color: var(--clay); }
+@media (max-width: 800px) { nav ul { display: none; } }
+
+/* SUBHERO — typographic, tree-rings as full-block texture */
+.subhero { position: relative; padding: 200px 5vw 100px; background: var(--forest); color: var(--bone); overflow: hidden; }
+.subhero::before { content: ''; position: absolute; inset: 0; background-image: var(--tree-rings); background-size: 800px 800px; background-position: 75% 50%; background-repeat: no-repeat; opacity: 0.12; pointer-events: none; filter: invert(1); }
+.subhero-content { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; }
+.subhero h1 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(48px, 6vw, 88px); line-height: 1.05; letter-spacing: -0.015em; margin: 28px 0 24px; color: var(--bone); max-width: 1100px; }
+.subhero h1 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--clay); }
+.subhero-rule { width: 64px; height: 1px; background: var(--gold); margin: 36px 0 28px; }
+.subhero p { max-width: 680px; font-family: var(--font-serif); font-style: italic; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.55; color: rgba(246,244,238,0.8); }
+
+/* OPENING SECTION — bio + portrait */
+.intro { padding: 110px 5vw; background: var(--bone); position: relative; overflow: hidden; }
+.intro::before { content: ''; position: absolute; top: -20%; right: -10%; width: 700px; height: 700px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.04; pointer-events: none; }
+.intro-grid { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: start; }
+.intro-text h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; letter-spacing: -0.005em; margin-top: 20px; margin-bottom: 28px; color: var(--forest); }
+.intro-text h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.intro-text p { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.7; color: var(--forest); margin-bottom: 22px; }
+.intro-text p.standfirst { font-family: var(--font-serif); font-style: italic; font-size: clamp(22px, 2vw, 26px); line-height: 1.45; color: var(--sage); padding-left: 22px; border-left: 2px solid var(--clay); margin: 28px 0; }
+
+.portrait-frame { position: relative; padding-bottom: 0; }
+.portrait-frame img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+.portrait-frame .portrait-bg { position: absolute; bottom: -32px; right: -32px; width: 220px; height: 220px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.18; z-index: -1; }
+.portrait-frame .placeholder { width: 100%; aspect-ratio: 3/4; background: linear-gradient(135deg, var(--mist) 0%, var(--sage) 100%); display: flex; align-items: flex-end; justify-content: center; padding: 28px; color: var(--bone); font-family: var(--font-serif); font-style: italic; font-size: 15px; text-align: center; line-height: 1.5; }
+.portrait-caption { margin-top: 16px; font-family: var(--font-serif); font-style: italic; font-size: 14px; color: var(--gray); text-align: center; }
+
+@media (max-width: 900px) { .intro-grid { grid-template-columns: 1fr; gap: 50px; } }
+
+/* CREDIBILITY STRIP — three numbers */
+.cred { background: var(--ink); color: var(--bone); padding: 70px 5vw; }
+.cred-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.cred-stat { text-align: center; }
+.cred-num { font-family: var(--font-sans); font-weight: 300; font-size: clamp(38px, 4.4vw, 56px); line-height: 1; letter-spacing: -0.02em; color: var(--gold); margin-bottom: 12px; }
+.cred-num em { font-family: var(--font-serif); font-style: italic; font-size: 0.7em; color: var(--clay); }
+.cred-lbl { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(246,244,238,0.78); font-weight: 500; line-height: 1.4; }
+@media (max-width: 800px) { .cred-inner { grid-template-columns: 1fr; gap: 30px; } }
+
+/* NARRATIVE SECTIONS */
+.narrative { padding: 110px 5vw; position: relative; overflow: hidden; }
+.narrative.bone { background: var(--bone); }
+.narrative.mist { background: var(--mist); background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.85  0 0 0 0 0.82  0 0 0 0 0.75  0 0 0 0.06 0'/></filter><rect width='220' height='220' filter='url(%23n)' opacity='0.55'/></svg>"); background-blend-mode: multiply; }
+.narrative.forest { background: var(--forest); color: var(--bone); }
+.narrative .ring-bg { position: absolute; pointer-events: none; opacity: 0.05; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; }
+.narrative .ring-bg.tl { top: -15%; left: -10%; width: 600px; height: 600px; }
+.narrative .ring-bg.br { bottom: -20%; right: -15%; width: 700px; height: 700px; }
+.narrative.forest .ring-bg { filter: invert(1); opacity: 0.07; }
+.narrative-inner { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; }
+.narrative h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(32px, 3.4vw, 48px); line-height: 1.15; margin-top: 18px; margin-bottom: 26px; }
+.narrative h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.narrative p { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.7; margin-bottom: 22px; }
+.narrative.forest h2 { color: var(--bone); }
+.narrative.forest p { color: rgba(246,244,238,0.85); }
+.narrative blockquote { font-family: var(--font-serif); font-style: italic; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.4; margin: 36px 0; padding: 0 32px; text-align: center; color: inherit; }
+.narrative blockquote::before { content: '“'; font-size: 64px; color: var(--gold); display: block; line-height: 0.5; margin-bottom: 20px; }
+
+/* PHILOSOPHY GRID */
+.philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 36px 0; }
+.philosophy-card { background: var(--bone); border: 1px solid var(--rule); border-left: 3px solid var(--gold); padding: 28px 30px; }
+.philosophy-card .num { font-family: var(--font-serif); font-style: italic; font-size: 28px; color: var(--gold); line-height: 1; margin-bottom: 10px; }
+.philosophy-card h3 { font-size: 14px; font-weight: 500; color: var(--forest); margin-bottom: 10px; letter-spacing: 0.02em; }
+.philosophy-card p { font-size: 14.5px; line-height: 1.55; color: var(--gray); margin: 0; }
+@media (max-width: 700px) { .philosophy-grid { grid-template-columns: 1fr; } }
+
+/* FATHER'S LEGACY CALLOUT */
+.legacy { background: var(--sage); color: var(--bone); padding: 100px 5vw; position: relative; overflow: hidden; }
+.legacy .ring-bg { position: absolute; top: -25%; left: -8%; width: 650px; height: 650px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.1; pointer-events: none; filter: invert(1); }
+.legacy-inner { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; text-align: center; }
+.legacy h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; margin: 22px 0 24px; color: var(--bone); }
+.legacy h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--clay); }
+.legacy p { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.7; color: rgba(246,244,238,0.88); margin-bottom: 22px; }
+
+/* APPLY CTA */
+.apply { padding: 130px 5vw; background: var(--clay); color: var(--forest); text-align: center; position: relative; overflow: hidden; }
+.apply::before { content: ''; position: absolute; inset: 0; background-image: var(--tree-rings); background-size: 900px 900px; background-position: center; background-repeat: no-repeat; opacity: 0.06; pointer-events: none; }
+.apply-inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
+.apply h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(36px, 5vw, 64px); line-height: 1.1; margin: 22px 0 24px; }
+.apply h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.apply p { font-size: 17px; line-height: 1.7; color: var(--forest); margin-bottom: 32px; max-width: 540px; margin-left: auto; margin-right: auto; }
+.apply .cta { display: inline-block; padding: 18px 38px; background: var(--forest); color: var(--bone); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; transition: background .3s ease; }
+.apply .cta:hover { background: var(--ink); }
+
+footer { background: var(--forest); color: var(--bone); padding: 70px 5vw 32px; }
+.foot-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.foot-logo { width: 110px; filter: brightness(2); }
+.foot-links { display: flex; gap: 28px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; flex-wrap: wrap; }
+.foot-links a { color: rgba(246,244,238,0.7); }
+.foot-links a:hover { color: var(--clay); }
+.foot-copy { font-size: 12px; color: rgba(246,244,238,0.5); margin-top: 30px; text-align: center; padding-top: 24px; border-top: 1px solid rgba(246,244,238,0.1); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" aria-label="Yellowwood Atelier home">
+    <img src="assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier" class="logo-img"/>
+  </a>
+  <ul>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="design.html">Design</a></li>
+            <li><a href="branding.html">Branding</a></li>
+    <li><a href="investment.html">Investment</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="index.html#apply">Apply</a></li>
+  <li><a href="setup-checklist.html">Checklist</a></li>
+    </ul>
+</nav>
+
+<!-- ─── SUBHERO ─────────────────────────────────── -->
+<header class="subhero">
+  <div class="subhero-content">
+    <span class="eyebrow" style="color: var(--gold);">About</span>
+    <h1>Hi, I'm <em>Tara</em>.</h1>
+    <div class="subhero-rule"></div>
+    <p>I run Yellowwood Atelier, a small short-term rental design and brand studio. I'm the designer on every project, the person behind every property brand, and I'm an STR owner myself, which is mostly the reason the studio exists at all. This page is the long version of who I am and how the work got here.</p>
+  </div>
+</header>
+
+<!-- ─── INTRO + PORTRAIT ───────────────────────── -->
+<section class="intro">
+  <div class="intro-grid">
+    <div class="intro-text">
+      <span class="eyebrow">A bit about me</span>
+      <h2>The <em>short</em> version.</h2>
+      <p>I grew up in a family of artists and architects, which means I've been rearranging rooms and arguing about composition since I was old enough to pick up a piece of furniture. I studied architecture and interior design in college before pivoting into marketing, but design has always been the part of me that's been there, and I think it always will be.</p>
+      <p>I spent the next fifteen years in marketing, thirteen of them as chief marketing officer of a national healthcare company. I led teams of marketers, designers, and technologists across product, brand, and campaign work, and across that run we picked up a string of design and branding awards I'm proud of. Marketing taught me how to measure whether a design move actually does anything for a business. That part, the operator math behind the design choice, turned out to be the most useful thing I took with me when I started designing short-term rentals.</p>
+      <p>Today I own and operate four short-term rentals of my own, with a few more coming each year. I'm based in Omaha, married, and raising three kids who travel with me and have gotten weirdly good at install days. I'd rather be honest than impressive, which is probably why the studio is built the way it is.</p>
+    </div>
+
+    <div class="portrait-frame">
+      <!-- Single portrait per page — sized small-to-medium, never full-bleed -->
+      <img src="assets/tara_portrait_marble.jpg" alt="Tara Sprakel, founder and principal designer of Yellowwood Atelier" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+      <div class="placeholder" style="display:none;">Portrait slot<br/><br/>Drop chosen photo into <code style="font-family: var(--font-sans); font-style: normal; background: rgba(0,0,0,0.15); padding: 2px 6px; font-size: 12px;">Brand Kit/06_Photography/Founder/tara_portrait_marble.jpg</code></div>
+      <div class="portrait-bg"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW THE STUDIO IS BUILT (operator-relevant facts, not credentials) ───────────────────────── -->
+<section class="cred">
+  <div class="cred-inner">
+    <div class="cred-stat">
+      <div class="cred-num">4</div>
+      <div class="cred-lbl">Short-term rentals<br/>I own and run myself</div>
+    </div>
+    <div class="cred-stat">
+      <div class="cred-num">1</div>
+      <div class="cred-lbl">Designer on every project<br/>(that's me)</div>
+    </div>
+    <div class="cred-stat">
+      <div class="cred-num">4&ndash;6</div>
+      <div class="cred-lbl">Engagements per season<br/>by application only</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ORIGIN STORY ──────────────────────────── -->
+<section class="narrative bone">
+  <div class="ring-bg tl"></div>
+  <div class="narrative-inner">
+    <span class="eyebrow">The origin</span>
+    <h2>How Yellowwood Atelier <em>started</em>.</h2>
+
+    <p>I'm an experienced designer, but for my first short-term rental investment I did what most first-time STR owners do: I hired a well-known firm in the space. I trusted that their reputation, scale, and finished portfolio would translate into a successful property.</p>
+
+    <p>It didn't.</p>
+
+    <p>Furnishings arrived at the wrong scale and size. Quality was poor. Nearly every other owner in my market had a near-identical copy-paste of the same design. Customer service was underwhelming, and my questions sat in the firm's inbox for days. By the time the property launched, I'd redesigned much of it myself, because it was faster than waiting for the firm to respond.</p>
+
+    <blockquote>That's when I knew I could do it better &mdash; and that someone had to.</blockquote>
+
+    <p>The mission became clear to me: design short-term rentals that don't blend in. Properties guests photograph, post, and remember. A studio that responds the next morning, not next week. Furnishings specified, sourced, and installed by an operator who knows what books, and what doesn't.</p>
+
+    <p>The studio's name was waiting. My father spent his career as an architect and artist at a large firm, and when he retired he opened a small boutique studio of his own as a self-described "hobbyist" and called it Yellowwood Atelier, drawing the name from Robert Frost's <em>two roads diverged in a yellow wood</em>. Architecture and art done well always take the less-traveled road, and so does short-term rental investing: the design choices, the operator math, the willingness to commit to what the market won't predict. I carry the studio's name forward into a new chapter. <em>The studio is the same. The chapter is new.</em></p>
+  </div>
+</section>
+
+<!-- ─── PHILOSOPHY ────────────────────────────── -->
+<section class="narrative mist">
+  <div class="narrative-inner">
+    <span class="eyebrow">The philosophy</span>
+    <h2>Six things that <em>shape every project</em> I take on.</h2>
+
+    <div class="philosophy-grid">
+      <div class="philosophy-card">
+        <div class="num">i</div>
+        <h3>Design that performs.</h3>
+        <p>Every choice I make ties to ADR, occupancy, forced appreciation, and review velocity. If a design move doesn't earn its place on the listing or in the review, it doesn't make the cut.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="num">ii</div>
+        <h3>Half in is all out.</h3>
+        <p>I don't take projects where owners want to skip phases. The math works because every layer compounds. You go all in, or you don't see the returns.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="num">iii</div>
+        <h3>Walk it as a guest.</h3>
+        <p>I stay at every property before sign-off. Is the music playing in the right room? Are the cue sticks accessible? Is the coffee station situated where guests reach for it? I know because I test it.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="num">iv</div>
+        <h3>Theme as accent, never costume.</h3>
+        <p>A Western cabin can be distinctly Oklahoma without being Disney-Western. Editorial discipline is what separates a designed STR from a themed one, and I'd rather be designed than themed every time.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="num">v</div>
+        <h3>Transparency over gatekeeping.</h3>
+        <p>I publish the studio's FF&amp;E procurement fee, the pricing rubric, and market context. Most STR design firms hide all three. Owners deserve honest math.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="num">vi</div>
+        <h3>Bridge the gap.</h3>
+        <p>Design alone isn't the brief. The studio extends through hospitality details and operations handoff, because the property has to perform on Saturday night, not on a moodboard.</p>
+      </div>
+    </div>
+
+    <p style="font-family: var(--font-serif); font-style: italic; font-size: 22px; line-height: 1.45; color: var(--forest); text-align: center; margin: 40px auto 0; max-width: 700px;">"Every room needs something unexpected." &mdash; my aesthetic in five words.</p>
+  </div>
+</section>
+
+<!-- ─── OUTSIDE THE STUDIO ─────────────────────── -->
+<section class="narrative bone">
+  <div class="ring-bg br"></div>
+  <div class="narrative-inner">
+    <span class="eyebrow">Outside the work</span>
+    <h2>A few things that <em>show up in the design</em>.</h2>
+    <p>I travel a lot, mostly with my family. Costa Rica is the trip I cite the most when I'm trying to explain what good hospitality actually feels like. Every place we stayed there felt like a spa, in a way that wasn't precious or expensive, just thoughtful. That's the bar I'm trying to hit.</p>
+    <p>I read a lot. <em>Made for Living</em> by Amber Lewis is the book I most often hand to a new client or anyone who works with me. If you've flipped through it, you already understand my whole position on layered textures, brave color, and rooms designed to be lived in, not just photographed.</p>
+    <p>The design references I pull from depend on the project: Hotel Saint George in Marfa, Costa Rican spa elements when there's an outdoor moment to make, rustic-ranched aesthetics for southern cabins. The thread across all of them is the same: layered, deliberate, slightly off-center. Every room needs something unexpected.</p>
+    <p>Outside of work I garden, walk and listen to audiobooks, and watch my kids play youth sports more than I'd have ever predicted. None of that is fancy. All of it ends up in the design somewhere.</p>
+  </div>
+</section>
+
+<!-- ─── A NOTE ON 'ATELIER' ─────────────────────── -->
+<section class="narrative forest">
+  <div class="ring-bg tl"></div>
+  <div class="narrative-inner">
+    <span class="eyebrow" style="color: var(--gold);">A quick note on the name</span>
+    <h2>Atelier &mdash; <em>no French</em>.</h2>
+    <p>People assume "atelier" is meant to sound fancy. It's not, and I'd rather not be precious about it. An atelier is just a workshop. The place where someone makes things with their hands. That's what I do. The word fits because it's accurate.</p>
+    <p>Yellowwood Atelier is a workshop. Every project moves through my hands. I keep the season cap small on purpose (four to six properties) so the work stays the way I want it.</p>
+    <blockquote>An artist workshop is exactly what we do. No French.</blockquote>
+  </div>
+</section>
+
+<!-- ─── APPLY CTA ───────────────────────────── -->
+<section class="apply">
+  <div class="apply-inner">
+    <span class="eyebrow">When you're ready</span>
+    <h2>Apply to work with <em>the studio</em>.</h2>
+    <p>Yellowwood Atelier accepts 4&ndash;6 properties per season. Application is free, response within 5 business days, and acceptance is based on the fit between your property and the studio's design and performance standards.</p>
+    <a href="index.html#apply" class="cta">Apply to work with Yellowwood Atelier</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <img class="foot-logo" src="assets/Yellowwood_Atelier_Horizontal_mono_bone_512.png" alt="Yellowwood Atelier"/>
+    <div class="foot-links">
+      <a href="journal.html">Journal</a>
+      <a href="design.html">Design</a>
+      <a href="branding.html">Branding</a>
+      <a href="investment.html">Investment</a>
+      <a href="budget-estimator.html">Budget Estimator</a>
+      <a href="index.html#apply">Apply</a>
+    </div>
+  </div>
+  <div class="foot-copy">&copy; 2026 Yellowwood Atelier &middot; A Yellowwood Real Estate brand</div>
+</footer>
+
+</body>
+</html>
