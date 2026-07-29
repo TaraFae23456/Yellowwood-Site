@@ -28,7 +28,7 @@
 :root{--forest:#253026;--bone:#F6F4EE;--gold:#D4A937;--clay:#DBA39D;--mist:#A7B6C2;--sand:#CBBBA0;--ink:#1A1D1B;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',sans-serif;background:var(--bone);color:var(--forest);line-height:1.5}
-.wrap{max-width:1060px;margin:0 auto;padding:0 24px 80px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px 80px}.sitenav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid #e4dfd2;flex-wrap:wrap}.sitenav-brand img{height:30px;display:block}.sitenav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;flex-wrap:wrap}.sitenav a{color:var(--forest);text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}.sitenav a:hover{color:var(--gold)}@media(max-width:560px){.sitenav{justify-content:center;text-align:center}.sitenav ul{gap:16px}}
 header{padding:56px 0 28px;border-bottom:1px solid var(--forest)}
 .brand{display:flex;align-items:baseline;gap:10px;letter-spacing:.28em;font-size:13px;font-weight:500;text-transform:uppercase}
 .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);align-self:center}
@@ -107,10 +107,33 @@ footer .fbrand{letter-spacing:.24em;text-transform:uppercase;font-weight:500;col
 .gnote{font-size:11.5px;color:#8a8d84;line-height:1.5;margin-top:8px}
 .gclose{position:absolute;top:8px;right:12px;background:none;border:none;font-size:26px;line-height:1;color:#9a9d93;cursor:pointer;padding:4px 8px}
 @media print{.gate{display:none!important}}
+
+/* Checklist imagery */
+.hero-band{margin:20px 0 2px;border-radius:16px;overflow:hidden}
+.hero-band img{width:100%;height:clamp(230px,32vw,380px);object-fit:cover;display:block}
+.detailstrip{margin:26px 0 6px}
+.detailstrip .cap{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18.5px;color:#54604f;margin:0 0 12px}
+.detailstrip .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.detailstrip figure{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--sand);background:#fff}
+.detailstrip figcaption{font-size:10.5px;color:#6b746a;padding:6px 9px;text-transform:uppercase;letter-spacing:.07em}
+.detailstrip img{width:100%;height:118px;object-fit:cover;display:block}
 </style>
 </head>
 <body>
 <div class="wrap">
+<nav class="sitenav noprint">
+  <a class="sitenav-brand" href="index.html" aria-label="Yellowwood Atelier home">
+    <img src="assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier">
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="design.html">Design</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="investment.html">Investment</a></li>
+    <li><a href="index.html#apply">Apply</a></li>
+  </ul>
+</nav>
+<div class="hero-band noprint"><img src="assets/space-cowboy_great-room.jpg" alt="Fully furnished great room in a Yellowwood Atelier-designed short-term rental"></div>
 <header>
   <div class="brand">YELLOWWOOD <span class="dot"></span> <em>Atelier</em></div>
   <h1>The STR Setup Checklist</h1>
@@ -136,6 +159,16 @@ footer .fbrand{letter-spacing:.24em;text-transform:uppercase;font-weight:500;col
   <p>An <strong>Airbnb furnishing checklist</strong> is the complete list of furniture, linens, kitchenware, amenities, and supplies needed to furnish and run a short-term rental. This one covers <strong>295 host-tested products across 16 rooms and categories</strong>, from beds and bath towels to the coffee bar, TVs, outdoor seating, safety gear, and host consumables. The <strong>cost to furnish a short-term rental</strong> typically runs about <strong>$8,000 for essentials to $20,000+ for a full, elevated setup</strong>, and this checklist calculates a <strong>live estimate that scales to your property</strong>, with style-specific picks for <strong>cabin, coastal, desert, and city</strong> rentals. Set your property profile above, work room by room, and export your tracker to stay organized through launch.</p>
 </section>
 
+<section class="detailstrip noprint">
+  <p class="cap">Every product on this list was bought, tested, and guest-approved in real short-term rentals.</p>
+  <div class="row">
+    <figure><img src="assets/wild-pelican_coffee-tea-station.jpg" alt="Coffee and tea station stocked for short-term rental guests"><figcaption>Coffee bar</figcaption></figure>
+    <figure><img src="assets/detail_bar-beverage-station.jpg" alt="Bar and beverage station with a cocktail shaker and coupe glasses at a short-term rental"><figcaption>Entertaining</figcaption></figure>
+    <figure><img src="assets/space-cowboy_dome-bedroom-canopy.jpg" alt="Dome bedroom with a star-mural canopy bed at a geodesic glamping rental"><figcaption>Bedroom</figcaption></figure>
+    <figure><img src="assets/wild-pelican_home-gym.jpg" alt="In-home gym with dumbbells and bench in a short-term rental"><figcaption>Wellness</figcaption></figure>
+    <figure><img src="assets/wild-pelican_mini-golf.jpg" alt="Backyard mini-golf setup at a short-term rental"><figcaption>Games</figcaption></figure>
+  </div>
+</section>
 <div class="controls noprint">
   <input type="search" id="q" placeholder="Search items…">
   <select id="fcat"><option value="">All categories</option></select>
@@ -163,7 +196,7 @@ footer .fbrand{letter-spacing:.24em;text-transform:uppercase;font-weight:500;col
 </section>
 
 <footer>
-  <div><span class="fbrand">Yellowwood Atelier</span><br>Design &amp; brand studio for short-term rentals that outperform their market.</div>
+  <div><a href="index.html" class="fbrand" style="text-decoration:none;color:inherit">Yellowwood Atelier</a><br>Design &amp; brand studio for short-term rentals that outperform their market.</div>
   <div>*Estimates reflect scaled quantities at prices paid, 2025–2026; current prices vary.<br>Product links open on Amazon. Progress is stored in this browser only.<br><span id="affnote">As an Amazon Associate, Yellowwood Atelier earns from qualifying purchases.</span></div>
 </footer>
 </div>

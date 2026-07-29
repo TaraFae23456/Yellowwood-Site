@@ -56,7 +56,7 @@
           "name": "What is the typical ROI on a Yellowwood Atelier engagement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yellowwood Atelier projects target a measurable lift in ADR (average daily rate) and first-year occupancy. Recent benchmarks include +47% ADR vs. prior pricing and 90% first-month occupancy. Combined with a 5-year forced-appreciation projection on the asset itself, design fees typically pay back inside the first operating year. Specific ROI ranges are scoped during the discovery call."
+            "text": "Yellowwood Atelier projects target a measurable lift in ADR (average daily rate) and first-year occupancy. Recent benchmarks include +47% ADR vs. prior pricing and 90% first-month occupancy. Design fees typically pay back inside the first operating year. Specific ROI ranges are scoped during the discovery call."
           }
         },
         {
@@ -330,7 +330,7 @@ nav ul a.active { color: var(--clay); }
 /* The 4 ROI levers */
 .lever-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 .lever {
@@ -1257,7 +1257,36 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Retired dangling decorative arcs — line language kept continuous & purposeful */
+.subhero-topo,.estimator-arch,.context-arch,.apply-arch{display:none !important;}
+
+/* Full-bleed photo bands */
+.photo-band{width:100%;margin:0;line-height:0}
+.photo-band img{width:100%;height:clamp(320px,44vw,560px);object-fit:cover;display:block}
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-exterior.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-exterior.jpg",
+   "caption": "Geodesic dome exterior of a Space Cowboy glamping short-term rental in the forest",
+   "creditText": "Yellowwood Atelier",
+   "creator": {
+    "@type": "Organization",
+    "name": "Yellowwood Atelier",
+    "url": "https://www.yellowwoodatelier.com/"
+   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -1291,7 +1320,7 @@ footer {
     <span class="subhero-eyebrow">Investment & ROI</span>
     <h1>What it costs.<br/>What it <em>earns back</em>.</h1>
     <div class="subhero-rule"></div>
-    <p class="subhero-lede">Yellowwood Atelier is an investment, not an expense. Every engagement is scoped to pay itself back in lift on ADR, occupancy, review velocity, and forced appreciation — usually inside the first operating year.</p>
+    <p class="subhero-lede">Yellowwood Atelier is an investment, not an expense. Every engagement is scoped to pay itself back in lift on ADR, occupancy, and review velocity — usually inside the first operating year.</p>
   </div>
 </header>
 
@@ -1324,12 +1353,6 @@ footer {
         <div class="lever-name">Review Score</div>
         <div class="lever-stat">5.0</div>
         <div class="lever-blurb">Average guest review on Yellowwood Atelier-designed properties. Reviews compound into platform algorithm lift.</div>
-      </div>
-      <div class="lever">
-        <div class="lever-num">iv</div>
-        <div class="lever-name">Forced Appreciation</div>
-        <div class="lever-stat">$250K<em>–$400K</em></div>
-        <div class="lever-blurb">Equity gain on a 5-year hold from the income lift alone, before market appreciation. Modeled from a $200 → $280 ADR lift and 60% → 85% occupancy at 7–10% cap rates.</div>
       </div>
     </div>
   </div>
@@ -1364,6 +1387,7 @@ footer {
 </section>
 
 <!-- ─── ROI ESTIMATOR ──────────────────────────────── -->
+<section class="photo-band"><img src="assets/space-cowboy_dome-exterior.jpg" alt="Geodesic dome exterior of a Space Cowboy glamping short-term rental in the forest" loading="lazy"></section>
 <section class="estimator">
   <div class="estimator-arch" aria-hidden="true">
     <svg viewBox="0 0 1100 600" xmlns="http://www.w3.org/2000/svg">
@@ -1377,7 +1401,7 @@ footer {
     <div class="estimator-head reveal">
       <span class="eyebrow">Return estimator</span>
       <h2>The math <em>on your property</em>.</h2>
-      <p>Tell us your current ADR and occupancy. We'll show you what a Yellowwood Atelier engagement could lift it to — using the studio's own benchmarks. <span class="tbd">Placeholder math · ranges to confirm</span></p>
+      <p>Tell us your current ADR and occupancy. We'll show you what a Yellowwood Atelier engagement could lift it to — using the studio's own benchmarks. </p>
     </div>
 
     <div class="estimator-card reveal delay-1">
@@ -1428,7 +1452,7 @@ footer {
       </div>
     </div>
 
-    <p class="estimator-disclaimer">Estimator uses 2026 US STR market benchmarks and a simplified model. Actual ROI depends on market, asset class, seasonality, and operating costs. Yellowwood Atelier provides a property-specific projection during the strategic direction phase.</p>
+    <p class="estimator-disclaimer">Estimator applies Yellowwood Atelier's own project benchmarks — recent work has lifted ADR up to 47% and reached 90% first-month occupancy. Actual ROI depends on market, asset class, seasonality, and operating costs. Yellowwood Atelier provides a property-specific projection during the strategic direction phase.</p>
   </div>
 </section>
 
@@ -1674,7 +1698,7 @@ footer {
     <details class="faq-item reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <summary itemprop="name">What's the typical ROI on a Yellowwood Atelier engagement?</summary>
       <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <span itemprop="text">Yellowwood Atelier projects target a measurable lift in ADR and occupancy. Recent benchmarks include a 47% ADR lift versus prior pricing and 90% first-month occupancy. Combined with forced appreciation on the asset itself, design fees typically pay back inside the first operating year. A property-specific ROI projection is delivered as part of Phase 1 (Strategic Direction).</span>
+        <span itemprop="text">Yellowwood Atelier projects target a measurable lift in ADR and occupancy. Recent benchmarks include a 47% ADR lift versus prior pricing and 90% first-month occupancy. Design fees typically pay back inside the first operating year. A property-specific ROI projection is delivered as part of Phase 1 (Strategic Direction).</span>
       </div>
     </details>
 

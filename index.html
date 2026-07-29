@@ -1120,7 +1120,70 @@ footer {
     transition: none !important;
   }
 }
+
+/* Retired dangling decorative arcs — line language kept continuous & purposeful */
+.hero-curve,.hero-topo,.manifesto-arch,.what-topo,.featured-arch,.bridge-curve,.apply-arch{display:none !important;}
+
+/* Full-bleed photo bands */
+.photo-band{width:100%;margin:0;line-height:0}
+.photo-band img{width:100%;height:clamp(320px,44vw,560px);object-fit:cover;display:block}
+
+/* Airbnb Luxe badge */
+.luxe-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#253026;background:#fbf4e6;border:1px solid #D4A937;border-radius:20px;padding:5px 12px;margin:6px 0 14px}
+.luxe-badge--light{color:#F6F4EE;background:rgba(255,255,255,.10);border-color:#D4A937}
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-bedroom-telescope.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-bedroom-telescope.jpg",
+   "caption": "Dome bedroom with a star-mural canopy bed and telescope at a geodesic glamping rental at dusk",
+   "creditText": "Yellowwood Atelier",
+   "creator": {
+    "@type": "Organization",
+    "name": "Yellowwood Atelier",
+    "url": "https://www.yellowwoodatelier.com/"
+   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/wild-pelican_neon-be-wild.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/wild-pelican_neon-be-wild.jpg",
+   "caption": "'Let Them Be Wild' neon over a mustard sofa and tropical-bird wallpaper",
+   "creditText": "Yellowwood Atelier",
+   "creator": {
+    "@type": "Organization",
+    "name": "Yellowwood Atelier",
+    "url": "https://www.yellowwoodatelier.com/"
+   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_firepit-dusk.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_firepit-dusk.jpg",
+   "caption": "Firepit with Adirondack chairs and string lights at a dome glamping retreat at dusk",
+   "creditText": "Yellowwood Atelier",
+   "creator": {
+    "@type": "Organization",
+    "name": "Yellowwood Atelier",
+    "url": "https://www.yellowwoodatelier.com/"
+   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -1216,6 +1279,7 @@ footer {
 </section>
 
 <!-- ─── WHAT WE DO ─────────────────────────────────────────── -->
+<section class="photo-band"><img src="assets/space-cowboy_dome-bedroom-telescope.jpg" alt="Dome bedroom with a star-mural canopy bed and telescope at a geodesic glamping rental at dusk" loading="lazy"></section>
 <section class="what-we-do" id="services">
   <div class="what-topo" aria-hidden="true">
     <img src="assets/TopoLines_clay_2048.png" alt=""/>
@@ -1286,6 +1350,7 @@ footer {
 </section>
 
 <!-- ─── PORTFOLIO ─────────────────────────────────────────── -->
+<section class="photo-band"><img src="assets/wild-pelican_neon-be-wild.jpg" alt="'Let Them Be Wild' neon over a mustard sofa and tropical-bird wallpaper" loading="lazy"></section>
 <section class="featured" id="portfolio">
   <!-- Portfolio intro -->
   <div style="max-width: var(--container); margin: 0 auto 80px; text-align: center; position: relative; z-index: 2;">
@@ -1312,6 +1377,7 @@ footer {
     <div class="featured-text reveal delay-1">
       <span class="eyebrow">Case study no. 01 &middot; <a href="portfolio/cabin-broken-bow.html" style="color:var(--gold);">Read →</a></span>
       <h3><em>Lazy Lariat</em><br/>&mdash; Broken Bow, OK</h3>
+      <span class="luxe-badge">★ Airbnb Luxe</span>
       <p class="quote">"Stunning d&eacute;cor, high-end finishes, and thoughtful touches that made the entire experience feel truly luxurious."</p>
       <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray); margin-top: -8px; margin-bottom: 24px;">&mdash; Melissa &middot; Nov 2025 &middot; <span style="color: var(--gold);">&starf;&starf;&starf;&starf;&starf;</span></p>
 
@@ -1372,6 +1438,7 @@ footer {
 </section>
 
 <!-- ─── BRIDGE THE GAP ─────────────────────────────────────── -->
+<section class="photo-band"><img src="assets/space-cowboy_firepit-dusk.jpg" alt="Firepit with Adirondack chairs and string lights at a dome glamping retreat at dusk" loading="lazy"></section>
 <section class="bridge">
   <div class="bridge-curve" aria-hidden="true">
     <svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">

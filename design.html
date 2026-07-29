@@ -1126,7 +1126,51 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Retired dangling decorative arcs — line language kept continuous & purposeful */
+.subhero-topo,.engagements-arch,.apply-arch{display:none !important;}
+
+/* Full-bleed photo bands */
+.photo-band{width:100%;margin:0;line-height:0}
+.photo-band img{width:100%;height:clamp(320px,44vw,560px);object-fit:cover;display:block}
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_game-room-pool.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_game-room-pool.jpg",
+   "caption": "Game room with a pool table in a Yellowwood Atelier-designed short-term rental",
+   "creditText": "Yellowwood Atelier",
+   "creator": {
+    "@type": "Organization",
+    "name": "Yellowwood Atelier",
+    "url": "https://www.yellowwoodatelier.com/"
+   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/wild-pelican_florida-mural.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/wild-pelican_florida-mural.jpg",
+   "caption": "Hand-painted 'FLORIDA' mural fence with teal Adirondack chairs at a short-term rental",
+   "creditText": "Yellowwood Atelier",
+   "creator": {
+    "@type": "Organization",
+    "name": "Yellowwood Atelier",
+    "url": "https://www.yellowwoodatelier.com/"
+   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -1179,6 +1223,7 @@ footer {
 </section>
 
 <!-- ─── DETAILED SERVICES ──────────────────────────── -->
+<section class="photo-band"><img src="assets/space-cowboy_game-room-pool.jpg" alt="Game room with a pool table in a Yellowwood Atelier-designed short-term rental" loading="lazy"></section>
 <section class="services-detailed">
   <div class="services-wrapper">
 
@@ -1485,6 +1530,7 @@ footer {
 </section>
 
 <!-- ─── TIMELINE ──────────────────────────────────── -->
+<section class="photo-band"><img src="assets/wild-pelican_florida-mural.jpg" alt="Hand-painted 'FLORIDA' mural fence with teal Adirondack chairs at a short-term rental" loading="lazy"></section>
 <section class="timeline">
   <div class="timeline-wrapper">
     <div class="timeline-head reveal">
