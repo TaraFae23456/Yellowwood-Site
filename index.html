@@ -1128,9 +1128,38 @@ footer {
 .photo-band{width:100%;margin:0;line-height:0}
 .photo-band img{width:100%;height:clamp(320px,44vw,560px);object-fit:cover;display:block}
 
-/* Airbnb Luxe badge */
-.luxe-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#253026;background:#fbf4e6;border:1px solid #D4A937;border-radius:20px;padding:5px 12px;margin:6px 0 14px}
-.luxe-badge--light{color:#F6F4EE;background:rgba(255,255,255,.10);border-color:#D4A937}
+/* Recent-projects marquee */
+.pf{position:relative;padding:66px 0 60px;overflow:hidden}
+.pf .rings{position:absolute;top:50%;left:50%;width:1180px;height:1180px;transform:translate(-50%,-42%);opacity:.5;animation:pfspin 140s linear infinite;pointer-events:none}
+@keyframes pfspin{to{transform:translate(-50%,-42%) rotate(360deg)}}
+.pf .head{position:relative;text-align:center;margin-bottom:30px;padding:0 24px}
+.pf .head .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);font-weight:600}
+.pf .head h2{font-family:var(--font-serif),Georgia,serif;font-weight:500;font-size:clamp(28px,3.4vw,42px);margin:6px 0 4px}
+.pf .head .sub{color:var(--gray);font-family:var(--font-serif),Georgia,serif;font-style:italic;font-size:18px;margin:0}
+.pf .viewport{position:relative;overflow-x:auto;overflow-y:hidden;cursor:grab;scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.pf .viewport::-webkit-scrollbar{display:none}
+.pf .viewport.dragging{cursor:grabbing}
+.pf .rail{display:flex;gap:30px;width:max-content;padding:10px 6px}
+.pf .card{flex:0 0 auto;width:380px;margin:0}
+.pf .card img{width:380px;height:285px;object-fit:cover;display:block;border:1px solid #e3ddcf;box-shadow:0 16px 36px rgba(37,48,38,.13);user-select:none}
+.pf .card.a img{border-radius:64px 20px 64px 20px}
+.pf .card.b img{border-radius:20px 64px 20px 64px}
+.pf figcaption{text-align:center;margin-top:14px;user-select:none}
+.pf .pn{display:block;font-family:var(--font-serif),Georgia,serif;font-style:italic;font-size:18px}
+.pf .pl{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gray);margin-top:3px}
+.pf .hint{text-align:center;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#b9b3a3;margin-top:18px}
+@media (max-width:560px){.pf .card,.pf .card img{width:300px}.pf .card img{height:225px}}
+@media (prefers-reduced-motion:reduce){.pf .rings{animation:none}}
+/* Firepit text band */
+.textband{position:relative;min-height:clamp(360px,46vw,540px);display:flex;align-items:center;justify-content:center;text-align:center;color:#F6F4EE;overflow:hidden}
+.textband .tb-bg{position:absolute;inset:0;background:url('assets/space-cowboy_firepit-dusk.jpg') center 60%/cover no-repeat}
+.textband .tb-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,20,.55),rgba(20,24,20,.42) 45%,rgba(20,24,20,.66))}
+.textband .tb-inner{position:relative;max-width:760px;padding:64px 28px}
+.textband .eyebrow{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#E7C877;font-weight:600}
+.textband h2{font-family:var(--font-serif),Georgia,serif;font-weight:500;font-size:clamp(26px,3.6vw,44px);line-height:1.15;margin:14px 0 18px;color:#fff}
+.textband h2 em{font-style:italic;color:#F0D79A}
+.textband p{font-family:var(--font-serif),Georgia,serif;font-size:clamp(15px,1.5vw,19px);line-height:1.6;color:#ece7db;margin:0 auto;max-width:620px}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1138,15 +1167,22 @@ footer {
  "@graph": [
   {
    "@type": "ImageObject",
-   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-bedroom-telescope.jpg",
-   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-bedroom-telescope.jpg",
-   "caption": "Dome bedroom with a star-mural canopy bed and telescope at a geodesic glamping rental at dusk",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-bedroom-band.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_dome-bedroom-band.jpg",
+   "caption": "Geodesic dome bedroom with a star-mural canopy bed styled straight-on at Space Cowboy glamping rental in Hochatown, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
    "creditText": "Yellowwood Atelier",
-   "creator": {
-    "@type": "Organization",
-    "name": "Yellowwood Atelier",
-    "url": "https://www.yellowwoodatelier.com/"
-   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/gilded-spur_loft-game-room.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/gilded-spur_loft-game-room.jpg",
+   "caption": "Loft game room with arcade and Oklahoma mural at Gilded Spur short-term rental in Hochatown, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Yellowwood Atelier",
    "copyrightNotice": "\u00a9 Yellowwood Atelier",
    "copyrightYear": 2026,
    "acquireLicensePage": "https://www.yellowwoodatelier.com/"
@@ -1155,13 +1191,102 @@ footer {
    "@type": "ImageObject",
    "contentUrl": "https://www.yellowwoodatelier.com/assets/wild-pelican_neon-be-wild.jpg",
    "url": "https://www.yellowwoodatelier.com/assets/wild-pelican_neon-be-wild.jpg",
-   "caption": "'Let Them Be Wild' neon over a mustard sofa and tropical-bird wallpaper",
+   "caption": "‘Let Them Be Wild’ neon over a mustard sofa and tropical-bird wallpaper at The Wild Pelican in Bradenton, Florida",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Interior design by Yellowwood Atelier",
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/lazy-lariat_porch-swing-bar-gameday.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/lazy-lariat_porch-swing-bar-gameday.jpg",
+   "caption": "Covered porch bar with rope swings and a game-day TV at Lazy Lariat cabin in Broken Bow, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
    "creditText": "Yellowwood Atelier",
-   "creator": {
-    "@type": "Organization",
-    "name": "Yellowwood Atelier",
-    "url": "https://www.yellowwoodatelier.com/"
-   },
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_loft-galaxy-hallway.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_loft-galaxy-hallway.jpg",
+   "caption": "Loft hallway with a galaxy ceiling, neon accent and arcade at Space Cowboy in Hochatown, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Yellowwood Atelier",
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/gilded-spur_outdoor-gym-hot-tub.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/gilded-spur_outdoor-gym-hot-tub.jpg",
+   "caption": "Outdoor fitness area with free weights and a cedar hot tub at Gilded Spur in Hochatown, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Yellowwood Atelier",
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/wild-pelican_mini-golf-play.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/wild-pelican_mini-golf-play.jpg",
+   "caption": "Backyard mini-golf green with palm trees at The Wild Pelican in Bradenton, Florida",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Interior design by Yellowwood Atelier",
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/lazy-lariat_kids-adventure-bunk.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/lazy-lariat_kids-adventure-bunk.jpg",
+   "caption": "Kids’ adventure bunk room with a mountain mural and teepee at Lazy Lariat in Broken Bow, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Yellowwood Atelier",
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_bunk-room-nasa.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_bunk-room-nasa.jpg",
+   "caption": "Space-themed kids’ bunk room with a NASA play tent and painted night sky at Space Cowboy in Hochatown, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Yellowwood Atelier",
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/gilded-spur_pool-aerial-resort-program_hochatown-ok.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/gilded-spur_pool-aerial-resort-program_hochatown-ok.jpg",
+   "caption": "Aerial view of the resort-style pool and deck at Gilded Spur in Hochatown, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Yellowwood Atelier",
+   "copyrightNotice": "\u00a9 Yellowwood Atelier",
+   "copyrightYear": 2026,
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/wild-pelican_florida-mural.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/wild-pelican_florida-mural.jpg",
+   "caption": "Hand-painted Florida mural accent wall at The Wild Pelican in Bradenton, Florida",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Interior design by Yellowwood Atelier",
+   "acquireLicensePage": "https://www.yellowwoodatelier.com/"
+  },
+  {
+   "@type": "ImageObject",
+   "contentUrl": "https://www.yellowwoodatelier.com/assets/lazy-lariat_game-room-giddy-up.jpg",
+   "url": "https://www.yellowwoodatelier.com/assets/lazy-lariat_game-room-giddy-up.jpg",
+   "caption": "Game room with a pool table, arcade and ‘Giddy Up & Game On’ neon at Lazy Lariat in Broken Bow, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
+   "creditText": "Yellowwood Atelier",
    "copyrightNotice": "\u00a9 Yellowwood Atelier",
    "copyrightYear": 2026,
    "acquireLicensePage": "https://www.yellowwoodatelier.com/"
@@ -1170,13 +1295,9 @@ footer {
    "@type": "ImageObject",
    "contentUrl": "https://www.yellowwoodatelier.com/assets/space-cowboy_firepit-dusk.jpg",
    "url": "https://www.yellowwoodatelier.com/assets/space-cowboy_firepit-dusk.jpg",
-   "caption": "Firepit with Adirondack chairs and string lights at a dome glamping retreat at dusk",
+   "caption": "Fire pit ringed with Adirondack chairs and string lights at dusk at Space Cowboy in Hochatown, Oklahoma",
+   "creator": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://www.yellowwoodatelier.com/" },
    "creditText": "Yellowwood Atelier",
-   "creator": {
-    "@type": "Organization",
-    "name": "Yellowwood Atelier",
-    "url": "https://www.yellowwoodatelier.com/"
-   },
    "copyrightNotice": "\u00a9 Yellowwood Atelier",
    "copyrightYear": 2026,
    "acquireLicensePage": "https://www.yellowwoodatelier.com/"
@@ -1279,7 +1400,13 @@ footer {
 </section>
 
 <!-- ─── WHAT WE DO ─────────────────────────────────────────── -->
-<section class="photo-band"><img src="assets/space-cowboy_dome-bedroom-telescope.jpg" alt="Dome bedroom with a star-mural canopy bed and telescope at a geodesic glamping rental at dusk" loading="lazy"></section>
+<!-- RECENT PROJECTS (interactive marquee) -->
+<section class="pf" id="recent-projects" aria-label="Recent projects">
+<div class="rings"><svg viewBox="0 0 1040 1040" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="520" cy="520" rx="60" ry="57" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="93" ry="88" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="129" ry="123" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="160" ry="152" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="197" ry="188" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="229" ry="218" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="261" ry="249" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="299" ry="285" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="327" ry="312" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="366" ry="349" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="395" ry="377" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="429" ry="409" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="468" ry="446" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/><ellipse cx="520" cy="520" rx="509" ry="486" fill="none" stroke="#c9a24b" stroke-width="1.1" opacity="0.5"/></svg></div>
+<div class="head"><span class="eyebrow">Recent projects</span><h2>Fresh from the studio.</h2><p class="sub">A rotating look at the spaces we&rsquo;ve designed to book.</p></div>
+<div class="viewport" id="pfvp"><div class="rail" id="pfrail"><figure class="card a"><img src="assets/space-cowboy_dome-bedroom-band.jpg" width="380" height="285" loading="lazy" alt="Geodesic dome bedroom with a star-mural canopy bed styled straight-on at Space Cowboy glamping rental in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Space Cowboy</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card b"><img src="assets/gilded-spur_loft-game-room.jpg" width="380" height="285" loading="lazy" alt="Loft game room with arcade and Oklahoma mural at Gilded Spur short-term rental in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Gilded Spur</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card a"><img src="assets/wild-pelican_neon-be-wild.jpg" width="380" height="285" loading="lazy" alt="&lsquo;Let Them Be Wild&rsquo; neon over a mustard sofa and tropical-bird wallpaper at The Wild Pelican in Bradenton, Florida" draggable="false"><figcaption><span class="pn">The Wild Pelican</span><span class="pl">Bradenton, FL</span></figcaption></figure><figure class="card b"><img src="assets/lazy-lariat_porch-swing-bar-gameday.jpg" width="380" height="285" loading="lazy" alt="Covered porch bar with rope swings and a game-day TV at Lazy Lariat cabin in Broken Bow, Oklahoma" draggable="false"><figcaption><span class="pn">Lazy Lariat</span><span class="pl">Broken Bow, OK</span></figcaption></figure><figure class="card a"><img src="assets/space-cowboy_loft-galaxy-hallway.jpg" width="380" height="285" loading="lazy" alt="Loft hallway with a galaxy ceiling, neon accent and arcade at Space Cowboy in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Space Cowboy</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card b"><img src="assets/gilded-spur_outdoor-gym-hot-tub.jpg" width="380" height="285" loading="lazy" alt="Outdoor fitness area with free weights and a cedar hot tub at Gilded Spur in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Gilded Spur</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card a"><img src="assets/wild-pelican_mini-golf-play.jpg" width="380" height="285" loading="lazy" alt="Backyard mini-golf green with palm trees at The Wild Pelican in Bradenton, Florida" draggable="false"><figcaption><span class="pn">The Wild Pelican</span><span class="pl">Bradenton, FL</span></figcaption></figure><figure class="card b"><img src="assets/lazy-lariat_kids-adventure-bunk.jpg" width="380" height="285" loading="lazy" alt="Kids&rsquo; adventure bunk room with a mountain mural and teepee at Lazy Lariat in Broken Bow, Oklahoma" draggable="false"><figcaption><span class="pn">Lazy Lariat</span><span class="pl">Broken Bow, OK</span></figcaption></figure><figure class="card a"><img src="assets/space-cowboy_bunk-room-nasa.jpg" width="380" height="285" loading="lazy" alt="Space-themed kids&rsquo; bunk room with a NASA play tent and painted night sky at Space Cowboy in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Space Cowboy</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card b"><img src="assets/gilded-spur_pool-aerial-resort-program_hochatown-ok.jpg" width="380" height="285" loading="lazy" alt="Aerial view of the resort-style pool and deck at Gilded Spur in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Gilded Spur</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card a"><img src="assets/wild-pelican_florida-mural.jpg" width="380" height="285" loading="lazy" alt="Hand-painted Florida mural accent wall at The Wild Pelican in Bradenton, Florida" draggable="false"><figcaption><span class="pn">The Wild Pelican</span><span class="pl">Bradenton, FL</span></figcaption></figure><figure class="card b"><img src="assets/lazy-lariat_game-room-giddy-up.jpg" width="380" height="285" loading="lazy" alt="Game room with a pool table, arcade and &lsquo;Giddy Up &amp; Game On&rsquo; neon at Lazy Lariat in Broken Bow, Oklahoma" draggable="false"><figcaption><span class="pn">Lazy Lariat</span><span class="pl">Broken Bow, OK</span></figcaption></figure><figure class="card a"><img src="assets/space-cowboy_dome-bedroom-band.jpg" width="380" height="285" loading="lazy" alt="Geodesic dome bedroom with a star-mural canopy bed styled straight-on at Space Cowboy glamping rental in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Space Cowboy</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card b"><img src="assets/gilded-spur_loft-game-room.jpg" width="380" height="285" loading="lazy" alt="Loft game room with arcade and Oklahoma mural at Gilded Spur short-term rental in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Gilded Spur</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card a"><img src="assets/wild-pelican_neon-be-wild.jpg" width="380" height="285" loading="lazy" alt="&lsquo;Let Them Be Wild&rsquo; neon over a mustard sofa and tropical-bird wallpaper at The Wild Pelican in Bradenton, Florida" draggable="false"><figcaption><span class="pn">The Wild Pelican</span><span class="pl">Bradenton, FL</span></figcaption></figure><figure class="card b"><img src="assets/lazy-lariat_porch-swing-bar-gameday.jpg" width="380" height="285" loading="lazy" alt="Covered porch bar with rope swings and a game-day TV at Lazy Lariat cabin in Broken Bow, Oklahoma" draggable="false"><figcaption><span class="pn">Lazy Lariat</span><span class="pl">Broken Bow, OK</span></figcaption></figure><figure class="card a"><img src="assets/space-cowboy_loft-galaxy-hallway.jpg" width="380" height="285" loading="lazy" alt="Loft hallway with a galaxy ceiling, neon accent and arcade at Space Cowboy in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Space Cowboy</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card b"><img src="assets/gilded-spur_outdoor-gym-hot-tub.jpg" width="380" height="285" loading="lazy" alt="Outdoor fitness area with free weights and a cedar hot tub at Gilded Spur in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Gilded Spur</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card a"><img src="assets/wild-pelican_mini-golf-play.jpg" width="380" height="285" loading="lazy" alt="Backyard mini-golf green with palm trees at The Wild Pelican in Bradenton, Florida" draggable="false"><figcaption><span class="pn">The Wild Pelican</span><span class="pl">Bradenton, FL</span></figcaption></figure><figure class="card b"><img src="assets/lazy-lariat_kids-adventure-bunk.jpg" width="380" height="285" loading="lazy" alt="Kids&rsquo; adventure bunk room with a mountain mural and teepee at Lazy Lariat in Broken Bow, Oklahoma" draggable="false"><figcaption><span class="pn">Lazy Lariat</span><span class="pl">Broken Bow, OK</span></figcaption></figure><figure class="card a"><img src="assets/space-cowboy_bunk-room-nasa.jpg" width="380" height="285" loading="lazy" alt="Space-themed kids&rsquo; bunk room with a NASA play tent and painted night sky at Space Cowboy in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Space Cowboy</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card b"><img src="assets/gilded-spur_pool-aerial-resort-program_hochatown-ok.jpg" width="380" height="285" loading="lazy" alt="Aerial view of the resort-style pool and deck at Gilded Spur in Hochatown, Oklahoma" draggable="false"><figcaption><span class="pn">Gilded Spur</span><span class="pl">Hochatown, OK</span></figcaption></figure><figure class="card a"><img src="assets/wild-pelican_florida-mural.jpg" width="380" height="285" loading="lazy" alt="Hand-painted Florida mural accent wall at The Wild Pelican in Bradenton, Florida" draggable="false"><figcaption><span class="pn">The Wild Pelican</span><span class="pl">Bradenton, FL</span></figcaption></figure><figure class="card b"><img src="assets/lazy-lariat_game-room-giddy-up.jpg" width="380" height="285" loading="lazy" alt="Game room with a pool table, arcade and &lsquo;Giddy Up &amp; Game On&rsquo; neon at Lazy Lariat in Broken Bow, Oklahoma" draggable="false"><figcaption><span class="pn">Lazy Lariat</span><span class="pl">Broken Bow, OK</span></figcaption></figure></div></div>
+<div class="hint" aria-hidden="true">Hover, click or drag to explore &middot; release to resume</div>
+</section>
 <section class="what-we-do" id="services">
   <div class="what-topo" aria-hidden="true">
     <img src="assets/TopoLines_clay_2048.png" alt=""/>
@@ -1350,7 +1477,6 @@ footer {
 </section>
 
 <!-- ─── PORTFOLIO ─────────────────────────────────────────── -->
-<section class="photo-band"><img src="assets/wild-pelican_neon-be-wild.jpg" alt="'Let Them Be Wild' neon over a mustard sofa and tropical-bird wallpaper" loading="lazy"></section>
 <section class="featured" id="portfolio">
   <!-- Portfolio intro -->
   <div style="max-width: var(--container); margin: 0 auto 80px; text-align: center; position: relative; z-index: 2;">
@@ -1377,7 +1503,6 @@ footer {
     <div class="featured-text reveal delay-1">
       <span class="eyebrow">Case study no. 01 &middot; <a href="portfolio/cabin-broken-bow.html" style="color:var(--gold);">Read →</a></span>
       <h3><em>Lazy Lariat</em><br/>&mdash; Broken Bow, OK</h3>
-      <span class="luxe-badge">★ Airbnb Luxe</span>
       <p class="quote">"Stunning d&eacute;cor, high-end finishes, and thoughtful touches that made the entire experience feel truly luxurious."</p>
       <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray); margin-top: -8px; margin-bottom: 24px;">&mdash; Melissa &middot; Nov 2025 &middot; <span style="color: var(--gold);">&starf;&starf;&starf;&starf;&starf;</span></p>
 
@@ -1438,7 +1563,15 @@ footer {
 </section>
 
 <!-- ─── BRIDGE THE GAP ─────────────────────────────────────── -->
-<section class="photo-band"><img src="assets/space-cowboy_firepit-dusk.jpg" alt="Firepit with Adirondack chairs and string lights at a dome glamping retreat at dusk" loading="lazy"></section>
+<!-- FIREPIT TEXT BAND -->
+<section class="textband" aria-label="Beyond four walls">
+<div class="tb-bg" aria-hidden="true"></div><div class="tb-scrim" aria-hidden="true"></div>
+<div class="tb-inner">
+<span class="eyebrow">Beyond four walls</span>
+<h2>We design the nights<br/>they&rsquo;ll <em>talk about</em>.</h2>
+<p>Fire pits at dusk, star-painted ceilings, game rooms that empty the group chat &mdash; the details that turn a stay into a story, and a story into a five-star review.</p>
+</div>
+</section>
 <section class="bridge">
   <div class="bridge-curve" aria-hidden="true">
     <svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
@@ -1700,5 +1833,27 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 </script>
 
+<!-- Recent-projects interactive scroll -->
+<script>
+(function(){
+ var vp=document.getElementById('pfvp'), rail=document.getElementById('pfrail');
+ if(!vp||!rail) return;
+ var setW=rail.scrollWidth/2, SPEED=45;
+ var paused=false, dragging=false, sx=0, ss=0, last=null, resumeT=null;
+ var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+ function norm(){ if(vp.scrollLeft>=setW){vp.scrollLeft-=setW; if(dragging)ss-=setW;} else if(vp.scrollLeft<0){vp.scrollLeft+=setW; if(dragging)ss+=setW;} }
+ function tick(now){ if(last===null)last=now; var dt=(now-last)/1000; last=now; if(!reduce&&!paused&&!dragging){ vp.scrollLeft+=SPEED*dt; } norm(); requestAnimationFrame(tick); }
+ requestAnimationFrame(tick);
+ vp.addEventListener('pointerenter',function(e){ if(e.pointerType==='mouse') paused=true; });
+ vp.addEventListener('pointerleave',function(e){ if(e.pointerType==='mouse'&&!dragging) paused=false; });
+ vp.addEventListener('pointerdown',function(e){ dragging=true; paused=true; vp.classList.add('dragging'); sx=e.clientX; ss=vp.scrollLeft; try{vp.setPointerCapture(e.pointerId);}catch(_){} });
+ vp.addEventListener('pointermove',function(e){ if(!dragging)return; vp.scrollLeft=ss-(e.clientX-sx); norm(); });
+ function endDrag(e){ if(!dragging)return; dragging=false; vp.classList.remove('dragging'); paused=(e.pointerType==='mouse'&&vp.matches(':hover')); }
+ vp.addEventListener('pointerup',endDrag); vp.addEventListener('pointercancel',endDrag);
+ vp.addEventListener('wheel',function(){ paused=true; clearTimeout(resumeT); resumeT=setTimeout(function(){ if(!dragging&&!vp.matches(':hover')) paused=false; },1400); },{passive:true});
+ window.addEventListener('load',function(){ setW=rail.scrollWidth/2; });
+ window.addEventListener('resize',function(){ setW=rail.scrollWidth/2; });
+})();
+</script>
 </body>
 </html>

@@ -117,22 +117,34 @@ footer .fbrand{letter-spacing:.24em;text-transform:uppercase;font-weight:500;col
 .detailstrip figure{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--sand);background:#fff}
 .detailstrip figcaption{font-size:10.5px;color:#6b746a;padding:6px 9px;text-transform:uppercase;letter-spacing:.07em}
 .detailstrip img{width:100%;height:118px;object-fit:cover;display:block}
+
+/* Standard site nav (matches other pages) */
+#sitenav{display:flex;align-items:center;justify-content:space-between;padding:22px 5vw;background:var(--bone);border-bottom:1px solid #e4dfd2}
+#sitenav .logo-img{height:52px;width:auto;display:block}
+#sitenav ul{list-style:none;display:flex;gap:34px;margin:0;padding:0;flex-wrap:wrap;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:400}
+#sitenav a{color:var(--forest);text-decoration:none}
+#sitenav a:hover{color:var(--clay)}
+#sitenav a.active{color:var(--clay)}
+@media(max-width:760px){#sitenav{flex-direction:column;gap:14px;padding:18px 24px}#sitenav ul{gap:18px;justify-content:center}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<nav class="sitenav noprint">
-  <a class="sitenav-brand" href="index.html" aria-label="Yellowwood Atelier home">
-    <img src="assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier">
-  </a>
+<nav id="sitenav" class="noprint">
+  <a href="index.html" aria-label="Yellowwood Atelier home"><img src="assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier" class="logo-img"/></a>
   <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="design.html">Design</a></li>
-    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="branding.html">Branding</a></li>
     <li><a href="investment.html">Investment</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="journal.html">Journal</a></li>
     <li><a href="index.html#apply">Apply</a></li>
+    <li><a href="setup-checklist.html" class="active">Checklist</a></li>
   </ul>
 </nav>
+
+<div class="wrap">
+
 <div class="hero-band noprint"><img src="assets/space-cowboy_great-room.jpg" alt="Fully furnished great room in a Yellowwood Atelier-designed short-term rental"></div>
 <header>
   <div class="brand">YELLOWWOOD <span class="dot"></span> <em>Atelier</em></div>
