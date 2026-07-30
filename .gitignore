@@ -1,0 +1,9 @@
+# working / source folders — not part of the deployed site
+_to_delete/
+_removed/
+
+# large media never belongs in the repo
+*.mp4
+*.mov
+*.webm
+*.avi

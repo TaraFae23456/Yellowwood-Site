@@ -219,7 +219,14 @@ footer { background: var(--forest); color: var(--bone); padding: 70px 5vw 32px; 
 .foot-copy { font-size: 12px; color: rgba(246,244,238,0.5); margin-top: 30px; text-align: center; padding-top: 24px; border-top: 1px solid rgba(246,244,238,0.1); }
 
 /* Airbnb Luxe badge */
-.luxe-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#253026;background:#fbf4e6;border:1px solid #D4A937;border-radius:20px;padding:5px 12px;margin:6px 0 14px}
+.luxe-strip{display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;margin:10px 0 16px}
+.luxe-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.96);border-radius:100px;padding:7px 14px;box-shadow:0 8px 22px rgba(0,0,0,.22);flex:0 0 auto}
+.luxe-badge .lb-brand{font-weight:700;font-size:13px;letter-spacing:-.02em;color:#FF385C;line-height:1}
+.luxe-badge .lb-div{width:1px;height:14px;background:#e3ddcf}
+.luxe-badge .lb-luxe{font-family:Georgia,serif;font-style:italic;font-size:13.5px;color:#253026;letter-spacing:.02em;line-height:1}
+.luxe-quals{display:flex;flex-wrap:wrap;gap:8px 14px;list-style:none;margin:0;padding:0}
+.luxe-quals li{position:relative;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,244,238,.82);white-space:nowrap}
+.luxe-quals li:not(:last-child)::after{content:"\00b7";margin-left:14px;color:rgba(246,244,238,.4)}
 .luxe-badge--light{color:#F6F4EE;background:rgba(255,255,255,.10);border-color:#D4A937}
 </style>
 </head>
@@ -247,7 +254,7 @@ footer { background: var(--forest); color: var(--bone); padding: 70px 5vw 32px; 
   <div class="case-hero-content">
     <span class="eyebrow">Case study · Recently delivered</span>
     <h1><em>Lazy Lariat</em>.</h1>
-    <span class="luxe-badge luxe-badge--light">★ Airbnb Luxe</span>
+    <div class="luxe-strip"><span class="luxe-badge" aria-label="Airbnb Luxe property"><span class="lb-brand">airbnb</span><span class="lb-div"></span><span class="lb-luxe">Luxe</span></span><ul class="luxe-quals"><li>Hand-selected home</li><li>Rigorous quality inspection</li><li>Design-forward interiors</li><li>Premium amenities &amp; service</li></ul></div>
     <p class="sub">A Western-Saloon cabin in Broken Bow, Oklahoma — designed to be unforgettable.</p>
     <div class="case-hero-meta">
       <span><strong>Yellowwood Atelier</strong></span>
