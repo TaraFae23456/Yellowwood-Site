@@ -7,7 +7,7 @@
 <title>About — Yellowwood Atelier | Tara Sprakel, Founder & Principal Designer</title>
 <meta name="description" content="The studio behind Yellowwood Atelier. Led by Tara Sprakel, an award-winning former healthcare CMO turned operator-led short-term rental designer. Carrying her father's studio name forward into a new chapter of editorial STR design and property branding."/>
 <meta name="keywords" content="yellowwood atelier founder, tara sprakel designer, str interior designer, vacation rental design studio, operator-led design, hospitality interior designer, broken bow designer, oklahoma cabin designer"/>
-<link rel="canonical" href="https://atelier.yellowwoodre.com/about"/>
+<link rel="canonical" href="https://yellowwoodatelier.com/about"/>
 
 <meta property="og:title" content="About — Yellowwood Atelier"/>
 <meta property="og:description" content="Meet Tara Sprakel: founder, principal designer, operator. The studio behind Yellowwood Atelier."/>
@@ -20,17 +20,17 @@
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "https://atelier.yellowwoodre.com/about#page",
+      "@id": "https://yellowwoodatelier.com/about#page",
       "name": "About Yellowwood Atelier",
-      "url": "https://atelier.yellowwoodre.com/about",
+      "url": "https://yellowwoodatelier.com/about",
       "description": "The studio and the founder behind Yellowwood Atelier."
     },
     {
       "@type": "Person",
-      "@id": "https://atelier.yellowwoodre.com/about#tara",
+      "@id": "https://yellowwoodatelier.com/about#tara",
       "name": "Tara Sprakel",
       "jobTitle": "Founder & Principal Designer",
-      "worksFor": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://atelier.yellowwoodre.com/" },
+      "worksFor": { "@type": "Organization", "name": "Yellowwood Atelier", "url": "https://yellowwoodatelier.com/" },
       "description": "Award-winning former CMO of a national healthcare brand. Two-time 40 Under 40 honoree. Operator of four short-term rentals. Founder of Yellowwood Atelier, an editorial short-term rental design studio."
     }
   ]
@@ -160,22 +160,46 @@ footer { background: var(--forest); color: var(--bone); padding: 70px 5vw 32px; 
 .foot-links a:hover { color: var(--clay); }
 .foot-copy { font-size: 12px; color: rgba(246,244,238,0.5); margin-top: 30px; text-align: center; padding-top: 24px; border-top: 1px solid rgba(246,244,238,0.1); }
 </style>
+<style id="yw-nav-css">
+.yw-nav{position:sticky;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 5vw;margin:0;min-height:70px;background:rgba(246,244,238,0.97);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid #e4dfd2;box-sizing:border-box}
+.yw-nav *{box-sizing:border-box}
+.yw-nav .yw-logo{display:flex;align-items:center;flex:0 0 auto;padding:0;border:0}
+.yw-nav .yw-logo img{height:42px;width:auto;display:block}
+.yw-nav .yw-links{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:28px}
+.yw-nav .yw-links li{margin:0;padding:0}
+.yw-nav .yw-links a{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:#253026;text-decoration:none;white-space:nowrap;transition:color .2s;background:none;border:0}
+.yw-nav .yw-links a:hover,.yw-nav .yw-links a.active{color:#D4A937}
+.yw-nav .yw-links a.yw-cta{color:#8a6d2f}
+.yw-nav .yw-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;padding:9px;background:none;border:0;cursor:pointer;flex:0 0 auto}
+.yw-nav .yw-toggle span{display:block;height:2px;width:100%;background:#253026;border-radius:2px;transition:transform .3s,opacity .3s}
+.yw-nav.open .yw-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.yw-nav.open .yw-toggle span:nth-child(2){opacity:0}
+.yw-nav.open .yw-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:880px){
+ .yw-nav{flex-wrap:wrap;gap:0}
+ .yw-nav .yw-toggle{display:flex;margin-left:auto}
+ .yw-nav .yw-links{order:3;flex-basis:100%;width:100%;flex-direction:column;align-items:stretch;gap:0;max-height:0;overflow:hidden;transition:max-height .34s ease}
+ .yw-nav.open .yw-links{max-height:80vh;margin-top:6px}
+ .yw-nav .yw-links a{display:block;padding:14px 2px;font-size:13px;letter-spacing:.16em;border-top:1px solid rgba(37,48,32,.08)}
+}
+@media print{.yw-nav{display:none}}
+</style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" aria-label="Yellowwood Atelier home">
-    <img src="assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier" class="logo-img"/>
-  </a>
-  <ul>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="design.html">Design</a></li>
-            <li><a href="branding.html">Branding</a></li>
-    <li><a href="investment.html">Investment</a></li>
-    <li><a href="journal.html">Journal</a></li>
-    <li><a href="index.html#apply">Apply</a></li>
-  <li><a href="setup-checklist.html">Checklist</a></li>
-    </ul>
+<nav class="yw-nav" aria-label="Primary navigation">
+<a href="/" class="yw-logo" aria-label="Yellowwood Atelier — home"><img src="/assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier"></a>
+<button class="yw-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<ul class="yw-links">
+<li><a href="/about.html">About</a></li>
+<li><a href="/design.html">Design</a></li>
+<li><a href="/branding.html">Branding</a></li>
+<li><a href="/investment.html">Investment</a></li>
+<li><a href="/index.html#portfolio">Portfolio</a></li>
+<li><a href="/journal.html">Journal</a></li>
+<li><a href="/setup-checklist.html">Checklist</a></li>
+<li><a href="/index.html#apply" class="yw-cta">Apply</a></li>
+</ul>
 </nav>
 
 <!-- ─── SUBHERO ─────────────────────────────────── -->
@@ -340,5 +364,16 @@ footer { background: var(--forest); color: var(--bone); padding: 70px 5vw 32px; 
   <div class="foot-copy">&copy; 2026 Yellowwood Atelier &middot; A Yellowwood Real Estate brand</div>
 </footer>
 
+<script id="yw-nav-js">
+(function(){var n=document.querySelector('.yw-nav');if(!n)return;
+var t=n.querySelector('.yw-toggle');
+if(t)t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});
+var path=location.pathname.replace(/\/index\.html$/,'/');
+n.querySelectorAll('.yw-links a').forEach(function(a){
+ var ap=a.getAttribute('href');
+ if(ap&&ap.charAt(0)==='/'&&ap.indexOf('#')===-1){var lp=ap.replace(/\/index\.html$/,'/');if(lp===path)a.classList.add('active');}
+ a.addEventListener('click',function(){n.classList.remove('open');});
+});})();
+</script>
 </body>
 </html>
