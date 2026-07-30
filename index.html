@@ -1702,31 +1702,9 @@ footer {
     <h2 class="reveal delay-1">A small studio.<br/>A <em>long</em> waitlist.</h2>
     <p class="reveal delay-2">Yellowwood Atelier accepts 4&ndash;6 engagements each season. We work selectively, by application. If your property could be unforgettable, we want to talk.</p>
 
-    <!--
-      ═══════════════════════════════════════════════════════════════════
-      LEAD CAPTURE FORM · Formspree wiring
-      ═══════════════════════════════════════════════════════════════════
-      ONE-TIME SETUP (2 minutes):
-        1. Go to https://formspree.io/register — sign up with hello@yellowwoodre.com (free plan).
-        2. Create a new form. Name it "Atelier Apply". Set destination email to hello@yellowwoodre.com.
-        3. Copy the form endpoint (looks like https://formspree.io/f/xkabcde12).
-        4. Replace YOUR_FORMSPREE_ID below with that ID.
-        5. Verify your email once (Formspree sends a confirmation link).
-        6. Push live. Submissions arrive in your inbox + Formspree dashboard.
-
-      FALLBACK: until you swap in the real Formspree ID, the form's mailto fallback
-      opens a pre-filled email to hello@yellowwoodre.com so you never miss a lead.
-
-      UPGRADE PATH: when you outgrow Formspree, swap the action URL to any of:
-        · HubSpot Free CRM (built-in forms) — best if you want a proper CRM
-        · Airtable Forms — best if you want a spreadsheet-style lead board
-        · Google Forms embed — free, leads flow into a Google Sheet
-      ═══════════════════════════════════════════════════════════════════
-    -->
-    <form class="apply-form reveal delay-3"
-          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
-          method="POST"
-          onsubmit="if(this.action.includes('YOUR_FORMSPREE_ID')){window.location='mailto:hello@yellowwoodre.com?subject=Atelier Application — '+encodeURIComponent(this.name.value||'New lead')+'&body='+encodeURIComponent('Name: '+this.name.value+'\nEmail: '+this.email.value+'\nProperty status: '+this.property_status.value+'\nLocation: '+this.location.value+'\nInterest: '+this.interest.value+'\nBudget: '+this.budget.value+'\nTiming: '+this.timing.value+'\n\nMessage:\n'+this.message.value);return false;}">
+    <!-- LEAD CAPTURE FORM · currently emails hello@yellowwoodre.com (opens a pre-filled email). To make capture fully automatic (no email client), wire action to a form endpoint: a free Formspree form created under hello@yellowwoodre.com, or a HubSpot form (portal 246883965) — then swap the action URL. -->
+    <form class="apply-form reveal delay-3" action="mailto:hello@yellowwoodre.com" method="post"
+          onsubmit="var f=this;var body='Name: '+f.name.value+'\nEmail: '+f.email.value+'\nProperty status: '+f.property_status.value+'\nProperty location: '+f.location.value+'\nInterested in: '+f.interest.value+'\nTiming: '+f.timing.value+'\nBudget: '+f.budget.value+'\n\nMessage:\n'+(f.message.value||'');window.location.href='mailto:hello@yellowwoodre.com?subject='+encodeURIComponent('Atelier application — '+(f.name.value||'New lead'))+'&body='+encodeURIComponent(body);return false;">
 
       <input type="hidden" name="_subject" value="New Yellowwood Atelier application">
       <input type="hidden" name="_next" value="https://yellowwoodatelier.com/thanks">
