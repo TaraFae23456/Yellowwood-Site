@@ -142,6 +142,8 @@ footer .fbrand{letter-spacing:.24em;text-transform:uppercase;font-weight:500;col
 }
 @media print{.yw-nav{display:none}}
 </style>
+  <!-- HubSpot tracking (Yellowwood Atelier, portal 246883965) -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/246883965.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -392,7 +394,7 @@ render();
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){err.textContent='Please enter a valid email address.';return;}
     var b=document.getElementById('gBtn');b.disabled=true;b.textContent='Sending\u2026';err.textContent='';
     var fields=[{name:'email',value:email}];if(name)fields.push({name:'firstname',value:name});
-    var body={fields:fields,context:{pageUri:location.href,pageName:document.title}};
+    var ctx={pageUri:location.href,pageName:document.title};var hm=document.cookie.match(/(?:^|;\s*)hubspotutk=([^;]+)/);if(hm)ctx.hutk=hm[1];var body={fields:fields,context:ctx};
     function done(){try{localStorage.setItem(K,email);}catch(e){}var act=pending;pending=null;g.style.display='none';b.disabled=false;b.textContent='Email me the checklist';if(typeof act==='function')setTimeout(act,60);}
     fetch('https://api.hsforms.com/submissions/v3/integration/submit/246883965/b4cb7099-b913-4586-81dc-5aa99d305b77',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}).then(done).catch(done);
   });
