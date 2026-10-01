@@ -863,7 +863,7 @@ footer a { color: var(--gs-rookwood); }
     </div>
 
     <!-- 5-up hero row — visual teaser, all 5 unique from the captioned grid below -->
-    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 40px;">
+    <div class="gs-teaser" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 40px;">
       <div style="aspect-ratio: 4/5; background-image: url('../assets/gilded-spur_fire-pit-string-lights-dusk_hochatown-ok.jpg'); background-size: cover; background-position: center;" title="Fire pit at dusk"></div>
       <div style="aspect-ratio: 4/5; background-image: url('../assets/gilded-spur_pool-bar-fruit-charcuterie-staging_hochatown-ok.jpg'); background-size: cover; background-position: center;" title="Pool bar arrival staging"></div>
       <div style="aspect-ratio: 4/5; background-image: url('../assets/gilded-spur_pool-aerial-resort-program_hochatown-ok.jpg'); background-size: cover; background-position: center;" title="Pool aerial"></div>
@@ -872,7 +872,7 @@ footer a { color: var(--gs-rookwood); }
     </div>
 
     <!-- Captioned grid — 7 narrative moments, each file used exactly once across the entire section -->
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 50px;">
+    <div class="gs-moments" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px; margin-top: 50px;">
 
       <!-- 1. Pool bar bourbon hour -->
       <figure style="margin: 0;">
@@ -888,4 +888,70 @@ footer a { color: var(--gs-rookwood); }
         <div style="aspect-ratio: 4/3; background-image: url('../assets/gilded-spur_poolside-drink-table-mint-julep_hochatown-ok.jpg'); background-size: cover; background-position: center;"></div>
         <figcaption style="margin-top: 14px;">
           <div style="font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase; color: var(--gs-rookwood); margin-bottom: 6px;">Poolside &middot; drinks where guests already are</div>
-          <p style="font-size: 14.5px; line-height: 1.6; color: var(--gray);">A teal side table set with a whiskey and a mint julep tin at the pool's edge, the pool bar with its green-and-white striped awning across the water. The drink station walks
+          <p style="font-size: 14.5px; line-height: 1.6; color: var(--gray);">A teal side table set with a whiskey and a mint julep tin at the pool's edge, the pool bar with its green-and-white striped awning across the water.</p>
+        </figcaption>
+      </figure>
+
+      <!-- 3. Wellness circuit -->
+      <figure style="margin: 0;">
+        <div style="aspect-ratio: 4/3; background-image: url('../assets/gilded-spur_outdoor-gym-hot-tub.jpg'); background-size: cover; background-position: center;"></div>
+        <figcaption style="margin-top: 14px;">
+          <div style="font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase; color: var(--gs-rookwood); margin-bottom: 6px;">Wellness circuit &middot; train, then soak</div>
+          <p style="font-size: 14.5px; line-height: 1.6; color: var(--gray);">An outdoor gym steps from the hot tub, part of a full wellness circuit with sauna and cold plunge. A reason to stay in Hochatown instead of just passing through.</p>
+        </figcaption>
+      </figure>
+
+      <!-- 4. The property at dusk -->
+      <figure style="margin: 0;">
+        <div style="aspect-ratio: 4/3; background-image: url('../assets/gilded-spur_exterior-dusk-aerial.jpg'); background-size: cover; background-position: center;"></div>
+        <figcaption style="margin-top: 14px;">
+          <div style="font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase; color: var(--gs-rookwood); margin-bottom: 6px;">The property &middot; from above at dusk</div>
+          <p style="font-size: 14.5px; line-height: 1.6; color: var(--gray);">Pool, pool bar, fire pit and wellness circuit, all within one backyard. Every amenity is designed to be seen in a single listing photo.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@media (max-width: 900px) {
+  .gs-teaser { grid-template-columns: repeat(2, 1fr) !important; }
+  .gs-teaser > div:last-child { display: none; }
+  .gs-moments { grid-template-columns: 1fr !important; }
+}
+</style>
+
+<!-- NEXT -->
+<section class="next">
+  <span class="eyebrow">Ready to commission your own</span>
+  <h2>Apply for an <em>Atelier Engagement</em>.</h2>
+  <p>Yellowwood Atelier accepts 4&ndash;6 properties per season. If yours could be unforgettable, the application takes ten minutes and the studio responds within 5 business days.</p>
+  <a href="../index.html#apply" class="cta">Apply to work with Yellowwood Atelier &rarr;</a>
+</section>
+
+<footer>
+  <p style="margin-bottom: 14px;">
+    <a href="../journal.html">Journal</a> &middot;
+    <a href="../design.html">Design</a> &middot;
+    <a href="../branding.html">Branding</a> &middot;
+    <a href="../investment.html">Investment</a> &middot;
+    <a href="../budget-estimator.html">Budget Estimator</a> &middot;
+    <a href="../index.html#apply">Apply</a>
+  </p>
+  <p>&copy; 2026 Yellowwood Atelier &middot; A Yellowwood Real Estate brand &middot; <a href="mailto:hello@yellowwoodatelier.com">hello@yellowwoodatelier.com</a></p>
+</footer>
+
+<script id="yw-nav-js">
+(function(){var n=document.querySelector('.yw-nav');if(!n)return;
+var t=n.querySelector('.yw-toggle');
+if(t)t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});
+var path=location.pathname.replace(/\/index\.html$/,'/');
+n.querySelectorAll('.yw-links a').forEach(function(a){
+ var ap=a.getAttribute('href');
+ if(ap&&ap.charAt(0)==='/'&&ap.indexOf('#')===-1){var lp=ap.replace(/\/index\.html$/,'/');if(lp===path)a.classList.add('active');}
+ a.addEventListener('click',function(){n.classList.remove('open');});
+});})();
+</script>
+</body>
+</html>
