@@ -7,3 +7,6 @@ _removed/
 *.mov
 *.webm
 *.avi
+
+# allow the small web-optimized films used on the site
+!assets/sc/*.mp4
