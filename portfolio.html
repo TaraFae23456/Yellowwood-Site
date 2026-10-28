@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Portfolio — Yellowwood Atelier | Short-Term Rental Interior Design</title>
+<meta name="twitter:image" content="https://yellowwoodatelier.com/assets/og-card.jpg?v=3"/>
+
+<meta name="description" content="Short-term rental interiors by Yellowwood Atelier: Lazy Lariat, Gilded Spur and Space Cowboy in Oklahoma, and The Wild Pelican in Bradenton, Florida."/>
+<meta name="keywords" content="yellowwood atelier founder, tara sprakel designer, str interior designer, vacation rental design studio, operator-led design, hospitality interior designer, broken bow designer, oklahoma cabin designer"/>
+<link rel="canonical" href="https://yellowwoodatelier.com/portfolio"/>
+
+<meta property="og:title" content="Portfolio — Yellowwood Atelier | Short-Term Rental Interior Design"/>
+<meta property="og:description" content="Short-term rental interiors by Yellowwood Atelier: Lazy Lariat, Gilded Spur and Space Cowboy in Oklahoma, and The Wild Pelican in Bradenton, Florida."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://yellowwoodatelier.com/assets/og-card.jpg?v=3"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://yellowwoodatelier.com/portfolio#page",
+  "name": "Portfolio — Yellowwood Atelier",
+  "url": "https://yellowwoodatelier.com/portfolio",
+  "description": "Short-term rental interiors by Yellowwood Atelier: Lazy Lariat and Gilded Spur in Broken Bow and Hochatown, Oklahoma; Space Cowboy, a geodesic dome cabin in Hochatown; and The Wild Pelican in Bradenton, Florida.",
+  "isPartOf": { "@type": "WebSite", "name": "Yellowwood Atelier", "url": "https://yellowwoodatelier.com/" },
+  "hasPart": [
+    { "@type": "CreativeWork", "name": "Lazy Lariat", "url": "https://yellowwoodatelier.com/portfolio/cabin-broken-bow.html" },
+    { "@type": "CreativeWork", "name": "Gilded Spur", "url": "https://yellowwoodatelier.com/portfolio/gilded-spur.html" },
+    { "@type": "CreativeWork", "name": "Space Cowboy", "url": "https://yellowwoodatelier.com/portfolio/space-cowboy.html" },
+    { "@type": "CreativeWork", "name": "The Wild Pelican", "url": "https://yellowwoodatelier.com/branding.html" }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --forest: #253026; --bone: #F6F4EE; --gold: #D4A937; --clay: #DBA39D;
+  --sage: #69715E; --mist: #A7B6C2; --gray: #525C53; --rule: #E8E5DC; --ink: #1A1D1B;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  /* Tree-ring / topo background — algorithmically smoothed organic wood-grain pattern (Catmull-Rom auto-tangents). Lives at Brand Kit/04_Brand_Elements/SVG/TreeRings_v2.svg for reuse across all pages. */
+  --tree-rings: url("assets/TreeRings_v3.svg");
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); font-weight: 400; font-size: 16px; line-height: 1.55; color: var(--forest); background: var(--bone); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+/* Readability protection — gold text fails on clay & mist backgrounds. Covers both inline-style AND class-based backgrounds. */
+.scope .eyebrow,
+section[style*="background: var(--clay)"] .eyebrow,
+section[style*="background: var(--mist)"] .eyebrow,
+.narrative.mist .eyebrow,
+.narrative.clay .eyebrow,
+.apply .eyebrow,
+.cta-card .eyebrow { color: var(--forest); }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 22px 5vw; display: flex; justify-content: space-between; align-items: center; color: var(--forest); background: rgba(246,244,238,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+.logo-img { height: 50px; width: auto; }
+nav ul { list-style: none; display: flex; gap: 32px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 400; }
+nav ul a:hover { color: var(--clay); transition: color .3s; }
+nav ul a.active { color: var(--clay); }
+@media (max-width: 800px) { nav ul { display: none; } }
+
+/* SUBHERO — typographic, tree-rings as full-block texture */
+.subhero { position: relative; padding: 200px 5vw 100px; background: var(--forest); color: var(--bone); overflow: hidden; }
+.subhero::before { content: ''; position: absolute; inset: 0; background-image: var(--tree-rings); background-size: 800px 800px; background-position: 75% 50%; background-repeat: no-repeat; opacity: 0.12; pointer-events: none; filter: invert(1); }
+.subhero-content { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; }
+.subhero h1 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(48px, 6vw, 88px); line-height: 1.05; letter-spacing: -0.015em; margin: 28px 0 24px; color: var(--bone); max-width: 1100px; }
+.subhero h1 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--clay); }
+.subhero-rule { width: 64px; height: 1px; background: var(--gold); margin: 36px 0 28px; }
+.subhero p { max-width: 680px; font-family: var(--font-serif); font-style: italic; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.55; color: rgba(246,244,238,0.8); }
+
+/* OPENING SECTION — bio + portrait */
+.intro { padding: 110px 5vw; background: var(--bone); position: relative; overflow: hidden; }
+.intro::before { content: ''; position: absolute; top: -20%; right: -10%; width: 700px; height: 700px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.04; pointer-events: none; }
+.intro-grid { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: start; }
+.intro-text h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; letter-spacing: -0.005em; margin-top: 20px; margin-bottom: 28px; color: var(--forest); }
+.intro-text h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.intro-text p { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.7; color: var(--forest); margin-bottom: 22px; }
+.intro-text p.standfirst { font-family: var(--font-serif); font-style: italic; font-size: clamp(22px, 2vw, 26px); line-height: 1.45; color: var(--sage); padding-left: 22px; border-left: 2px solid var(--clay); margin: 28px 0; }
+
+.portrait-frame { position: relative; padding-bottom: 0; }
+.portrait-frame img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+.portrait-frame .portrait-bg { position: absolute; bottom: -32px; right: -32px; width: 220px; height: 220px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.18; z-index: -1; }
+.portrait-frame .placeholder { width: 100%; aspect-ratio: 3/4; background: linear-gradient(135deg, var(--mist) 0%, var(--sage) 100%); display: flex; align-items: flex-end; justify-content: center; padding: 28px; color: var(--bone); font-family: var(--font-serif); font-style: italic; font-size: 15px; text-align: center; line-height: 1.5; }
+.portrait-caption { margin-top: 16px; font-family: var(--font-serif); font-style: italic; font-size: 14px; color: var(--gray); text-align: center; }
+
+@media (max-width: 900px) { .intro-grid { grid-template-columns: 1fr; gap: 50px; } }
+
+/* CREDIBILITY STRIP — three numbers */
+.cred { background: var(--ink); color: var(--bone); padding: 70px 5vw; }
+.cred-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.cred-stat { text-align: center; }
+.cred-num { font-family: var(--font-sans); font-weight: 300; font-size: clamp(38px, 4.4vw, 56px); line-height: 1; letter-spacing: -0.02em; color: var(--gold); margin-bottom: 12px; }
+.cred-num em { font-family: var(--font-serif); font-style: italic; font-size: 0.7em; color: var(--clay); }
+.cred-lbl { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(246,244,238,0.78); font-weight: 500; line-height: 1.4; }
+@media (max-width: 800px) { .cred-inner { grid-template-columns: 1fr; gap: 30px; } }
+
+/* NARRATIVE SECTIONS */
+.narrative { padding: 110px 5vw; position: relative; overflow: hidden; }
+.narrative.bone { background: var(--bone); }
+.narrative.mist { background: var(--mist); background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.85  0 0 0 0 0.82  0 0 0 0 0.75  0 0 0 0.06 0'/></filter><rect width='220' height='220' filter='url(%23n)' opacity='0.55'/></svg>"); background-blend-mode: multiply; }
+.narrative.forest { background: var(--forest); color: var(--bone); }
+.narrative .ring-bg { position: absolute; pointer-events: none; opacity: 0.05; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; }
+.narrative .ring-bg.tl { top: -15%; left: -10%; width: 600px; height: 600px; }
+.narrative .ring-bg.br { bottom: -20%; right: -15%; width: 700px; height: 700px; }
+.narrative.forest .ring-bg { filter: invert(1); opacity: 0.07; }
+.narrative-inner { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; }
+.narrative h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(32px, 3.4vw, 48px); line-height: 1.15; margin-top: 18px; margin-bottom: 26px; }
+.narrative h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.narrative p { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.7; margin-bottom: 22px; }
+.narrative.forest h2 { color: var(--bone); }
+.narrative.forest p { color: rgba(246,244,238,0.85); }
+.narrative blockquote { font-family: var(--font-serif); font-style: italic; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.4; margin: 36px 0; padding: 0 32px; text-align: center; color: inherit; }
+.narrative blockquote::before { content: '“'; font-size: 64px; color: var(--gold); display: block; line-height: 0.5; margin-bottom: 20px; }
+
+/* PHILOSOPHY GRID */
+.philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 36px 0; }
+.philosophy-card { background: var(--bone); border: 1px solid var(--rule); border-left: 3px solid var(--gold); padding: 28px 30px; }
+.philosophy-card .num { font-family: var(--font-serif); font-style: italic; font-size: 28px; color: var(--gold); line-height: 1; margin-bottom: 10px; }
+.philosophy-card h3 { font-size: 14px; font-weight: 500; color: var(--forest); margin-bottom: 10px; letter-spacing: 0.02em; }
+.philosophy-card p { font-size: 14.5px; line-height: 1.55; color: var(--gray); margin: 0; }
+@media (max-width: 700px) { .philosophy-grid { grid-template-columns: 1fr; } }
+
+/* FATHER'S LEGACY CALLOUT */
+.legacy { background: var(--sage); color: var(--bone); padding: 100px 5vw; position: relative; overflow: hidden; }
+.legacy .ring-bg { position: absolute; top: -25%; left: -8%; width: 650px; height: 650px; background-image: var(--tree-rings); background-size: contain; background-repeat: no-repeat; opacity: 0.1; pointer-events: none; filter: invert(1); }
+.legacy-inner { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; text-align: center; }
+.legacy h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.1; margin: 22px 0 24px; color: var(--bone); }
+.legacy h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--clay); }
+.legacy p { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.7; color: rgba(246,244,238,0.88); margin-bottom: 22px; }
+
+/* APPLY CTA */
+.apply { padding: 130px 5vw; background: var(--clay); color: var(--forest); text-align: center; position: relative; overflow: hidden; }
+.apply::before { content: ''; position: absolute; inset: 0; background-image: var(--tree-rings); background-size: 900px 900px; background-position: center; background-repeat: no-repeat; opacity: 0.06; pointer-events: none; }
+.apply-inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
+.apply h2 { font-family: var(--font-sans); font-weight: 300; font-size: clamp(36px, 5vw, 64px); line-height: 1.1; margin: 22px 0 24px; }
+.apply h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+.apply p { font-size: 17px; line-height: 1.7; color: var(--forest); margin-bottom: 32px; max-width: 540px; margin-left: auto; margin-right: auto; }
+.apply .cta { display: inline-block; padding: 18px 38px; background: var(--forest); color: var(--bone); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; transition: background .3s ease; }
+.apply .cta:hover { background: var(--ink); }
+
+footer { background: var(--forest); color: var(--bone); padding: 70px 5vw 32px; }
+.foot-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.foot-logo { width: 110px; filter: brightness(2); }
+.foot-links { display: flex; gap: 28px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; flex-wrap: wrap; }
+.foot-links a { color: rgba(246,244,238,0.7); }
+.foot-links a:hover { color: var(--clay); }
+.foot-copy { font-size: 12px; color: rgba(246,244,238,0.5); margin-top: 30px; text-align: center; padding-top: 24px; border-top: 1px solid rgba(246,244,238,0.1); }
+</style>
+<style id="yw-nav-css">
+.yw-nav{position:sticky;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 5vw;margin:0;min-height:70px;background:rgba(246,244,238,0.97);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid #e4dfd2;box-sizing:border-box}
+.yw-nav *{box-sizing:border-box}
+.yw-nav .yw-logo{display:flex;align-items:center;flex:0 0 auto;padding:0;border:0}
+.yw-nav .yw-logo img{height:42px;width:auto;display:block}
+.yw-nav .yw-links{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:28px}
+.yw-nav .yw-links li{margin:0;padding:0}
+.yw-nav .yw-links a{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:#253026;text-decoration:none;white-space:nowrap;transition:color .2s;background:none;border:0}
+.yw-nav .yw-links a:hover,.yw-nav .yw-links a.active{color:#D4A937}
+.yw-nav .yw-links a.yw-cta{color:#8a6d2f}
+.yw-nav .yw-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;padding:9px;background:none;border:0;cursor:pointer;flex:0 0 auto}
+.yw-nav .yw-toggle span{display:block;height:2px;width:100%;background:#253026;border-radius:2px;transition:transform .3s,opacity .3s}
+.yw-nav.open .yw-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.yw-nav.open .yw-toggle span:nth-child(2){opacity:0}
+.yw-nav.open .yw-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:880px){
+ .yw-nav{flex-wrap:wrap;gap:0}
+ .yw-nav .yw-toggle{display:flex;margin-left:auto}
+ .yw-nav .yw-links{order:3;flex-basis:100%;width:100%;flex-direction:column;align-items:stretch;gap:0;max-height:0;overflow:hidden;transition:max-height .34s ease}
+ .yw-nav.open .yw-links{max-height:80vh;margin-top:6px}
+ .yw-nav .yw-links a{display:block;padding:14px 2px;font-size:13px;letter-spacing:.16em;border-top:1px solid rgba(37,48,32,.08)}
+}
+@media print{.yw-nav{display:none}}
+</style>
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Google tag (gtag.js) — GA4 G-D2PPJFC884 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2PPJFC884"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D2PPJFC884');
+  </script>
+  <!-- HubSpot tracking (Yellowwood Atelier, portal 246883965) -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/246883965.js"></script>
+<link rel="stylesheet" href="/assets/refresh.css?v=1">
+<style>.post-figure{margin:44px 0 48px}.post-figure img{width:100%;display:block;object-fit:cover;aspect-ratio:16/9}.post-figure.arch{max-width:420px}.post-figure.arch img{aspect-ratio:4/5;border-radius:999px 999px 0 0}</style>
+</head>
+<body>
+
+<nav class="yw-nav" aria-label="Primary navigation">
+<a href="/" class="yw-logo" aria-label="Yellowwood Atelier — home"><img src="/assets/Yellowwood_Atelier_Horizontal_fullcolor_512.png" alt="Yellowwood Atelier"></a>
+<button class="yw-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<ul class="yw-links">
+<li><a href="/about.html">About</a></li>
+<li><a href="/design.html">Design</a></li>
+<li><a href="/branding.html">Branding</a></li>
+<li><a href="/investment.html">Investment</a></li>
+<li><a href="/portfolio.html">Portfolio</a></li>
+<li><a href="/journal.html">Journal</a></li>
+<li><a href="/setup-checklist.html">Checklist</a></li>
+<li><a href="/index.html#apply" class="yw-cta">Apply</a></li>
+</ul>
+</nav>
+
+<header class="subhero sh-v2">
+  <div class="subhero-content">
+    <span class="eyebrow">Portfolio</span>
+    <h1>The <em>work</em>.</h1>
+    <div class="subhero-rule"></div>
+    <p>Four properties across the Oklahoma pines and Florida&rsquo;s Gulf Coast: two full case studies, a brand-new dome and a family house that leans wild. Each one designed, branded and launched by the studio.</p>
+  </div>
+  <figure class="sh-arch">
+    <div class="sh-ph"><img src="assets/gilded-spur_loft-arcade-oklahoma-mural_hochatown-ok.jpg" alt="Loft with a hand-painted Oklahoma landscape mural and arcade cabinet at Gilded Spur, Hochatown, Oklahoma" fetchpriority="high"/></div>
+    <figcaption><a href="portfolio/gilded-spur.html"><span class="sc-proj">Gilded Spur</span></a><span class="sc-place">Hochatown, OK</span></figcaption>
+  </figure>
+</header>
+
+<section class="pfx" aria-label="Projects">
+  <div class="pfx-grid">
+    <a class="pfx-card lg" href="portfolio/cabin-broken-bow.html">
+      <div class="ph"><img src="assets/lazy-lariat_great-room-mural-wide.jpg" alt="Great room with a sunset mountain mural, cognac leather and a vintage rug at Lazy Lariat" loading="lazy"/></div>
+      <div class="meta"><span class="name">Lazy Lariat</span><span class="place">Broken Bow, OK</span></div>
+      <p class="desc">A Western-saloon cabin and Airbnb Luxe property. $675 average daily rate, roughly twice the market, and 90% occupancy in its first month.</p>
+      <span class="tag">Read the case study</span>
+    </a>
+    <a class="pfx-card sm arch" href="portfolio/gilded-spur.html">
+      <div class="ph"><img src="assets/gilded-spur_horse-mural-magic-hat-murals_hochatown-ok.jpg" alt="Great room with a hand-painted horse mural and leather sectional at Gilded Spur" loading="lazy"/></div>
+      <div class="meta"><span class="name">Gilded Spur</span><span class="place">Hochatown, OK</span></div>
+      <p class="desc">Equestrian luxury in the pines. The nightly rate went from $175 to $437, with 25 bookings in the first week.</p>
+      <span class="tag">Read the case study</span>
+    </a>
+    <a class="pfx-card lg" href="portfolio/space-cowboy.html">
+      <div class="ph"><img src="assets/sc/space-cowboy_dome-bed-sconces-dusk.jpg" alt="Four-poster bed under a painted night sky inside the Space Cowboy geodesic dome" loading="lazy"/></div>
+      <div class="meta"><span class="name">Space Cowboy</span><span class="place">Hochatown, OK</span></div>
+      <p class="desc">The newest project. A geodesic dome bedroom, a saloon under a spiral stair and an arcade wired in neon. Western, but make it outer space. Sleeps twelve.</p>
+      <span class="tag">See the project</span>
+    </a>
+    <a class="pfx-card sm arch" href="branding.html" id="wild-pelican">
+      <div class="ph"><img src="assets/wild-pelican_neon-be-wild.jpg" alt="Mustard sofa under a Let Them Be Wild neon and tropical-bird wallpaper at The Wild Pelican" loading="lazy"/></div>
+      <div class="meta"><span class="name">The Wild Pelican</span><span class="place">Bradenton, FL</span></div>
+      <p class="desc">A Gulf Coast family house that leans wild: tropical-bird wallpaper, a neon that says so, and its own branded canopy mini-golf.</p>
+      <span class="tag">See the brand</span>
+    </a>
+  </div>
+</section>
+
+<section class="apply ap-v2" style="--ap-img:url('/assets/lazy-lariat_primary-bedroom-navy.jpg')">
+  <div class="apply-inner">
+    <span class="eyebrow">When you're ready</span>
+    <h2>Your property, <em>next</em>.</h2>
+    <p>Yellowwood Atelier accepts 4&ndash;6 properties per season. Application is free, and you&rsquo;ll hear back within 5 business days.</p>
+    <a href="index.html#apply" class="cta">Apply to work with Yellowwood Atelier</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <img class="foot-logo" src="assets/Yellowwood_Atelier_Horizontal_mono_bone_512.png" alt="Yellowwood Atelier"/>
+    <div class="foot-links">
+      <a href="journal.html">Journal</a>
+      <a href="design.html">Design</a>
+      <a href="branding.html">Branding</a>
+      <a href="investment.html">Investment</a>
+      <a href="budget-estimator.html">Budget Estimator</a>
+      <a href="index.html#apply">Apply</a>
+    </div>
+  </div>
+  <div class="foot-copy">&copy; 2026 Yellowwood Atelier &middot; A Yellowwood Real Estate brand</div>
+</footer>
+
+<script id="yw-nav-js">
+(function(){var n=document.querySelector('.yw-nav');if(!n)return;
+var t=n.querySelector('.yw-toggle');
+if(t)t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});
+var path=location.pathname.replace(/\/index\.html$/,'/');
+n.querySelectorAll('.yw-links a').forEach(function(a){
+ var ap=a.getAttribute('href');
+ if(ap&&ap.charAt(0)==='/'&&ap.indexOf('#')===-1){var lp=ap.replace(/\/index\.html$/,'/');if(lp===path)a.classList.add('active');}
+ a.addEventListener('click',function(){n.classList.remove('open');});
+});})();
+</script>
+</body>
+</html>

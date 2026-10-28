@@ -876,7 +876,7 @@ section { padding: 120px var(--gutter); position: relative; }
 .apply-bg {
   position: absolute;
   inset: 0;
-  background-image: url('assets/sc/space-cowboy_arcade-hallway-neon.jpg');
+  background-image: url('assets/lazy-lariat_great-room-mural-wide.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.16;
@@ -1284,6 +1284,16 @@ footer {
 .door-copy .door-note{margin-top:40px;font-family:var(--font-sans);font-size:12px;letter-spacing:.04em;color:rgba(246,244,238,.5);max-width:none}
 @media (max-width:820px){ .door-inner{grid-template-columns:1fr} .door-arch{max-width:300px} }
 
+
+/* v2: rotating rooms in the hero arch */
+.pm-slides{position:absolute;inset:0}
+.no-js .pm-slides{position:relative;height:100%}
+.pm-slides .ps{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s ease}
+.pm-slides .ps.on{opacity:1}
+.portal-tag{position:absolute;z-index:3;display:flex;flex-direction:column;gap:2px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gray);pointer-events:none}
+.portal-tag .pt-proj{font-family:var(--font-serif);font-style:italic;font-size:17px;letter-spacing:0;text-transform:none;color:var(--forest)}
+.no-js .portal-tag{display:none}
+@media (prefers-reduced-motion: reduce){ .portal-tag{display:none} }
 /* footer/apply tweaks */
 .apply-bg{opacity:.22 !important}
 a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
@@ -1493,6 +1503,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   </script>
   <!-- HubSpot tracking (Yellowwood Atelier, portal 246883965) -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/246883965.js"></script>
+<link rel="stylesheet" href="/assets/refresh.css?v=1">
+<style>.post-figure{margin:44px 0 48px}.post-figure img{width:100%;display:block;object-fit:cover;aspect-ratio:16/9}.post-figure.arch{max-width:420px}.post-figure.arch img{aspect-ratio:4/5;border-radius:999px 999px 0 0}</style>
 </head>
 <body>
 
@@ -1505,7 +1517,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 <li><a href="/design.html">Design</a></li>
 <li><a href="/branding.html">Branding</a></li>
 <li><a href="/investment.html">Investment</a></li>
-<li><a href="/index.html#portfolio">Portfolio</a></li>
+<li><a href="/portfolio.html">Portfolio</a></li>
 <li><a href="/journal.html">Journal</a></li>
 <li><a href="/setup-checklist.html">Checklist</a></li>
 <li><a href="/index.html#apply" class="yw-cta">Apply</a></li>
@@ -1524,12 +1536,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     <div class="portal-anchor" aria-hidden="true"></div>
     <div class="portal-frame" aria-hidden="true"></div>
     <div class="portal-media">
-      <img src="assets/sc/space-cowboy_dome-bed-to-the-moon-neon.jpg" srcset="assets/sc/space-cowboy_dome-bed-to-the-moon-neon-sm.jpg 1000w, assets/sc/space-cowboy_dome-bed-to-the-moon-neon.jpg 2000w" sizes="100vw" alt="Geodesic dome bedroom with a leather headboard, patterned pillows and a 'to the moon' neon sign over a painted night sky at Space Cowboy, Hochatown, Oklahoma" fetchpriority="high"/>
+      <div class="pm-slides">
+        <img class="ps on" src="assets/gilded-spur_primary-bedroom-oklahoma-sky-neon_hochatown-ok.jpg" style="object-position:50% 45%" data-proj="Gilded Spur" data-place="Hochatown, Oklahoma" alt="Primary bedroom with a four-poster bed and an Oklahoma-sky neon at Gilded Spur, Hochatown, Oklahoma" fetchpriority="high"/>
+        <img class="ps" src="assets/lazy-lariat_primary-bedroom-navy.jpg" style="object-position:50% 50%" data-proj="Lazy Lariat" data-place="Broken Bow, Oklahoma" alt="Navy primary bedroom with a tufted headboard and gallery wall at Lazy Lariat, Broken Bow, Oklahoma" loading="lazy"/>
+        <img class="ps" src="assets/sc/space-cowboy_dome-bed-to-the-moon-neon.jpg" srcset="assets/sc/space-cowboy_dome-bed-to-the-moon-neon-sm.jpg 1000w, assets/sc/space-cowboy_dome-bed-to-the-moon-neon.jpg 2000w" sizes="100vw" style="object-position:50% 40%" data-proj="Space Cowboy" data-place="Hochatown, Oklahoma" alt="Geodesic dome bedroom with a &lsquo;to the moon&rsquo; neon over a painted night sky at Space Cowboy, Hochatown, Oklahoma" loading="lazy"/>
+        <img class="ps" src="assets/wild-pelican_neon-be-wild.jpg" style="object-position:55% 50%" data-proj="The Wild Pelican" data-place="Bradenton, Florida" alt="&lsquo;Let Them Be Wild&rsquo; neon over a mustard sofa and tropical-bird wallpaper at The Wild Pelican, Bradenton, Florida" loading="lazy"/>
+        <img class="ps" src="assets/gilded-spur_horse-mural-magic-hat-murals_hochatown-ok.jpg" style="object-position:40% 50%" data-proj="Gilded Spur" data-place="Hochatown, Oklahoma" alt="Great room with a hand-painted horse mural, leather sectional and cowhide rug at Gilded Spur, Hochatown, Oklahoma" loading="lazy"/>
+        <img class="ps" src="assets/lazy-lariat_great-room-mural-wide.jpg" style="object-position:60% 50%" data-proj="Lazy Lariat" data-place="Broken Bow, Oklahoma" alt="Great room with a sunset mountain mural, cognac leather and a vintage rug at Lazy Lariat, Broken Bow, Oklahoma" loading="lazy"/>
+      </div>
       <div class="portal-shade" aria-hidden="true"></div>
     </div>
+    <div class="portal-tag" aria-live="polite"><span class="pt-proj">Gilded Spur</span><span class="pt-place">Hochatown, Oklahoma</span></div>
     <div class="portal-caption">
-      <span class="pc-line">This is the dome. <i>Now picture yours.</i></span>
-      <span class="pc-where">Space Cowboy<br/>Hochatown, Oklahoma</span>
+      <span class="pc-line">Every room starts with a brief. <i>None of them say &ldquo;beige.&rdquo;</i></span>
+      <span class="pc-where"><span class="pc-proj">Gilded Spur</span><br/><span class="pc-place">Hochatown, Oklahoma</span></span>
     </div>
     <div class="portal-scroll" aria-hidden="true">Scroll to step inside</div>
   </div>
@@ -1556,27 +1576,31 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   </div>
 </section>
 
-<!-- ─── SPACE COWBOY · room by room ───────────────────────── -->
-<section class="walk" id="space-cowboy" aria-label="Space Cowboy, room by room">
+<!-- ─── SELECTED INTERIORS · room by room, across the portfolio ── -->
+<section class="walk" id="interiors" aria-label="Selected interiors">
   <div class="walk-pin">
     <div class="walk-track">
       <div class="walk-intro">
-        <span class="eyebrow">New work</span>
-        <h2>Space<br/>Cowboy</h2>
-        <p class="walk-loc">Hochatown, Oklahoma</p>
-        <p>A geodesic dome bedroom, a saloon under a spiral stair, an arcade wired in neon, and bedrooms painted like a desert at dusk. Western, but make it outer space. Sleeps twelve.</p>
+        <span class="eyebrow">Selected interiors</span>
+        <h2>Room<br/>by room</h2>
+        <p class="walk-loc">Oklahoma &amp; the Gulf Coast</p>
+        <p>Cabins in the Oklahoma pines, a house on Florida&rsquo;s Gulf Coast, a geodesic dome among the treetops. Each room is designed to be photographed, remembered and booked again.</p>
         <span class="walk-hint"><span>Keep scrolling to walk through</span></span>
       </div>
-      <figure class="room wide"><div class="ph"><img src="assets/sc/space-cowboy_dome-bed-sconces-dusk.jpg" srcset="assets/sc/space-cowboy_dome-bed-sconces-dusk-sm.jpg 1000w, assets/sc/space-cowboy_dome-bed-sconces-dusk.jpg 2000w" sizes="(max-width:820px) 84vw, 52vw" loading="lazy" alt="Four-poster bed under a painted starry wall with brass sconces inside the Space Cowboy geodesic dome"/></div><figcaption><span class="rn">The dome</span><span class="rd">A four-poster under a hand-painted night sky</span></figcaption></figure>
-      <figure class="room tall arch lift"><div class="ph"><img src="assets/sc/space-cowboy_dome-telescope-window.jpg" srcset="assets/sc/space-cowboy_dome-telescope-window-sm.jpg 1000w, assets/sc/space-cowboy_dome-telescope-window.jpg 2000w" sizes="(max-width:820px) 62vw, 26vw" loading="lazy" style="object-position:38% 50%" alt="White telescope aimed through a triangular dome window at dusk"/></div><figcaption><span class="rn">The observatory</span><span class="rd">A telescope aimed through the dome</span></figcaption></figure>
-      <figure class="room tall"><div class="ph"><img src="assets/sc/space-cowboy_space-cowboy-mural-spiral-stair.jpg" srcset="assets/sc/space-cowboy_space-cowboy-mural-spiral-stair-sm.jpg 1000w, assets/sc/space-cowboy_space-cowboy-mural-spiral-stair.jpg 2000w" sizes="(max-width:820px) 62vw, 26vw" loading="lazy" style="object-position:62% 50%" alt="Retro 'Space Cowboy' rider mural beside a black spiral staircase and rust-patina wall"/></div><figcaption><span class="rn">The great room</span><span class="rd">Spiral stair, cowboy mural, rusted tin</span></figcaption></figure>
-      <figure class="room wide"><div class="ph"><img src="assets/sc/space-cowboy_saloon-bar-globe-pendants.jpg" srcset="assets/sc/space-cowboy_saloon-bar-globe-pendants-sm.jpg 1000w, assets/sc/space-cowboy_saloon-bar-globe-pendants.jpg 2000w" sizes="(max-width:820px) 84vw, 52vw" loading="lazy" alt="Saloon game room with globe pendant lights, barrel-base bar stools and a pool table"/></div><figcaption><span class="rn">The saloon</span><span class="rd">Globe pendants over barrel stools and felt</span></figcaption></figure>
-      <figure class="room wide lift"><div class="ph"><img src="assets/sc/space-cowboy_arcade-hallway-neon.jpg" srcset="assets/sc/space-cowboy_arcade-hallway-neon-sm.jpg 1000w, assets/sc/space-cowboy_arcade-hallway-neon.jpg 2000w" sizes="(max-width:820px) 84vw, 52vw" loading="lazy" alt="Dark arcade hallway lined with cabinets under a pink 'Saddle up among the stars' neon"/></div><figcaption><span class="rn">The arcade</span><span class="rd">&ldquo;Saddle up among the stars,&rdquo; in pink neon</span></figcaption></figure>
-      <figure class="room tall arch"><div class="ph"><img src="assets/sc/space-cowboy_green-room-geometric-art.jpg" srcset="assets/sc/space-cowboy_green-room-geometric-art-sm.jpg 1000w, assets/sc/space-cowboy_green-room-geometric-art.jpg 2000w" sizes="(max-width:820px) 62vw, 26vw" loading="lazy" style="object-position:40% 50%" alt="Bedroom with sage-green painted shiplap, geometric wood art, chartreuse pillows and coral nightstands"/></div><figcaption><span class="rn">The green room</span><span class="rd">Sage shiplap, coral, chartreuse</span></figcaption></figure>
-      <figure class="room wide"><div class="ph"><img src="assets/sc/space-cowboy_lilac-room-plaid-headboard.jpg" srcset="assets/sc/space-cowboy_lilac-room-plaid-headboard-sm.jpg 1000w, assets/sc/space-cowboy_lilac-room-plaid-headboard.jpg 2000w" sizes="(max-width:820px) 84vw, 52vw" loading="lazy" alt="Lilac bedroom with a plaid upholstered headboard, mustard pillows and a burnt-orange bench"/></div><figcaption><span class="rn">The lilac room</span><span class="rd">Plaid, mustard and lavender, on purpose</span></figcaption></figure>
-      <figure class="room tall lift"><div class="ph"><img src="assets/sc/space-cowboy_bunk-room-spiral-ladder.jpg" srcset="assets/sc/space-cowboy_bunk-room-spiral-ladder-sm.jpg 1000w, assets/sc/space-cowboy_bunk-room-spiral-ladder.jpg 2000w" sizes="(max-width:820px) 62vw, 26vw" loading="lazy" style="object-position:45% 50%" alt="Bunk room with a spiral staircase up to a lofted bed and a green neon outline on the wall"/></div><figcaption><span class="rn">The bunkhouse</span><span class="rd">A spiral stair to the top bunk</span></figcaption></figure>
-      <figure class="room small"><div class="ph"><img src="assets/sc/space-cowboy_windmill-fan-detail-sm.jpg" loading="lazy" alt="Windmill-blade ceiling fan against dark-stained planks"/></div><figcaption><span class="rn">The details</span><span class="rd">Even the ceiling fan is a windmill</span></figcaption></figure>
-      <div class="walk-end"><p>Every room had a brief. None of them were beige.</p><a href="#apply">Apply for your property</a></div>
+      <figure class="room wide"><div class="ph"><img src="assets/gilded-spur_horse-mural-magic-hat-murals_hochatown-ok.jpg" loading="lazy" style="object-position:40% 50%" alt="Great room with a hand-painted horse mural and leather sectional at Gilded Spur"/></div><figcaption><span class="rn">The great room</span><span class="rd">Gilded Spur · Hochatown, OK</span></figcaption></figure>
+      <figure class="room tall arch lift"><div class="ph"><img src="assets/lazy-lariat_primary-bedroom-navy.jpg" loading="lazy" style="object-position:50% 50%" alt="Navy primary bedroom with a tufted headboard and framed gallery wall at Lazy Lariat"/></div><figcaption><span class="rn">The navy suite</span><span class="rd">Lazy Lariat · Broken Bow, OK</span></figcaption></figure>
+      <figure class="room wide"><div class="ph"><img src="assets/wild-pelican_neon-be-wild.jpg" loading="lazy" style="object-position:72% 50%" alt="Mustard sofa under a Let Them Be Wild neon and tropical-bird wallpaper at The Wild Pelican"/></div><figcaption><span class="rn">The wild room</span><span class="rd">The Wild Pelican · Bradenton, FL</span></figcaption></figure>
+      <figure class="room wide"><div class="ph"><img src="assets/sc/space-cowboy_dome-bed-sconces-dusk.jpg" srcset="assets/sc/space-cowboy_dome-bed-sconces-dusk-sm.jpg 1000w, assets/sc/space-cowboy_dome-bed-sconces-dusk.jpg 2000w" sizes="(max-width:820px) 84vw, 52vw" loading="lazy" style="object-position:50% 50%" alt="Four-poster under a painted night sky inside the Space Cowboy geodesic dome"/></div><figcaption><span class="rn">The dome</span><span class="rd">Space Cowboy · Hochatown, OK · New</span></figcaption></figure>
+      <figure class="room tall"><div class="ph"><img src="assets/gilded-spur_primary-bath.jpg" loading="lazy" style="object-position:45% 50%" alt="Freestanding soaking tub with candles and faux fur against cedar walls at Gilded Spur"/></div><figcaption><span class="rn">The soaking tub</span><span class="rd">Gilded Spur · Hochatown, OK</span></figcaption></figure>
+      <figure class="room wide lift"><div class="ph"><img src="assets/lazy-lariat_kids-adventure-bunk.jpg" loading="lazy" style="object-position:50% 50%" alt="Kids bunk room with a mountain mural, teepee and lounge chair at Lazy Lariat"/></div><figcaption><span class="rn">The adventure bunk</span><span class="rd">Lazy Lariat · Broken Bow, OK</span></figcaption></figure>
+      <figure class="room tall arch"><div class="ph"><img src="assets/sc/space-cowboy_green-room-geometric-art.jpg" srcset="assets/sc/space-cowboy_green-room-geometric-art-sm.jpg 1000w, assets/sc/space-cowboy_green-room-geometric-art.jpg 2000w" sizes="(max-width:820px) 84vw, 52vw" loading="lazy" style="object-position:40% 50%" alt="Sage shiplap bedroom with geometric wood art and coral nightstands at Space Cowboy"/></div><figcaption><span class="rn">The green room</span><span class="rd">Space Cowboy · Hochatown, OK</span></figcaption></figure>
+      <figure class="room wide"><div class="ph"><img src="assets/gilded-spur_primary-bedroom-oklahoma-sky-neon_hochatown-ok.jpg" loading="lazy" style="object-position:50% 45%" alt="Four-poster primary bedroom with an Oklahoma-sky neon at Gilded Spur"/></div><figcaption><span class="rn">The primary</span><span class="rd">Gilded Spur · Hochatown, OK</span></figcaption></figure>
+      <figure class="room small"><div class="ph"><img src="assets/lazy-lariat_fireplace-eames-detail.jpg" loading="lazy" style="object-position:50% 50%" alt="Lounge chair with a kilim pillow by a stone fireplace at Lazy Lariat"/></div><figcaption><span class="rn">The reading chair</span><span class="rd">Lazy Lariat · Broken Bow, OK</span></figcaption></figure>
+      <figure class="room wide lift"><div class="ph"><img src="assets/sc/space-cowboy_arcade-hallway-neon.jpg" srcset="assets/sc/space-cowboy_arcade-hallway-neon-sm.jpg 1000w, assets/sc/space-cowboy_arcade-hallway-neon.jpg 2000w" sizes="(max-width:820px) 84vw, 52vw" loading="lazy" style="object-position:50% 50%" alt="Arcade hallway under a pink Saddle up among the stars neon at Space Cowboy"/></div><figcaption><span class="rn">The arcade</span><span class="rd">Space Cowboy · Hochatown, OK</span></figcaption></figure>
+      <figure class="room wide"><div class="ph"><img src="assets/gilded-spur_loft-arcade-oklahoma-mural_hochatown-ok.jpg" loading="lazy" style="object-position:50% 50%" alt="Loft with a hand-painted Oklahoma landscape mural and arcade cabinet at Gilded Spur"/></div><figcaption><span class="rn">The loft</span><span class="rd">Gilded Spur · Hochatown, OK</span></figcaption></figure>
+      <figure class="room tall"><div class="ph"><img src="assets/lazy-lariat_kitchen-with-mural-view.jpg" loading="lazy" style="object-position:62% 50%" alt="Green-cabinet kitchen with a marble island and mountain mural at Lazy Lariat"/></div><figcaption><span class="rn">The kitchen</span><span class="rd">Lazy Lariat · Broken Bow, OK</span></figcaption></figure>
+      <figure class="room small"><div class="ph"><img src="assets/wild-pelican_coffee-tea-station.jpg" loading="lazy" style="object-position:50% 50%" alt="Styled coffee and tea station at The Wild Pelican"/></div><figcaption><span class="rn">The coffee bar</span><span class="rd">The Wild Pelican · Bradenton, FL</span></figcaption></figure>
+      <div class="walk-end"><p>Four properties.<br/>Not one beige room.</p><a href="/portfolio.html">See every project</a></div>
     </div>
   </div>
   <div class="walk-progress" aria-hidden="true"><span></span></div>
@@ -1603,21 +1627,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
       </div>
 
       <ol class="services-list">
-        <li class="reveal delay-1" data-peek="assets/sc/space-cowboy_saloon-pool-table-mural-sm.jpg">
+        <li class="reveal delay-1" data-peek="assets/lazy-lariat_game-room-saloon.jpg">
           <div class="num">01</div>
           <div>
             <div class="service-title">Strategic Direction</div>
             <div class="service-desc">Yellowwood Atelier analyzes your market, your guest, and the listings you're competing against. Every design choice that follows answers to performance: ADR, occupancy, forced appreciation.</div>
           </div>
         </li>
-        <li class="reveal delay-1" data-peek="assets/sc/space-cowboy_green-room-wide-sm.jpg">
+        <li class="reveal delay-1" data-peek="assets/gilded-spur_great-room-mural.jpg">
           <div class="num">02</div>
           <div>
             <div class="service-title">Editorial Interior Design</div>
             <div class="service-desc">Refined, photogenic, magazine-quality short-term rental interiors. Specified down to the cushion weight, the light at sunset, the texture of the towels. The room becomes the marketing.</div>
           </div>
         </li>
-        <li class="reveal delay-2" data-peek="assets/sc/space-cowboy_lilac-room-straight-on-sm.jpg">
+        <li class="reveal delay-2" data-peek="assets/lazy-lariat_primary-bedroom-navy.jpg">
           <div class="num">03</div>
           <div>
             <div class="service-title">Virtual Design Direction &amp; Self-Install Package</div>
@@ -1634,14 +1658,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
         </li>
         -->
         <!-- END FUTURE -->
-        <li class="reveal delay-2" data-peek="assets/sc/space-cowboy_coffee-bar-mug-wall-sm.jpg">
+        <li class="reveal delay-2" data-peek="assets/gilded-spur_breakfast-gs-branded-plate-mug_hochatown-ok.jpg">
           <div class="num">04</div>
           <div>
             <div class="service-title">Hospitality Details</div>
             <div class="service-desc">Where most firms stop. Yellowwood Atelier curates the welcome basket, the playlist, the bath products, the in-property guide. The moments guests photograph and post about.</div>
           </div>
         </li>
-        <li class="reveal delay-3" data-peek="assets/sc/space-cowboy_arcade-saddle-up-neon-sm.jpg">
+        <li class="reveal delay-3" data-peek="assets/wild-pelican_neon-be-wild.jpg">
           <div class="num">05</div>
           <div>
             <div class="service-title">Launch &amp; Marketing Package</div>
@@ -1745,6 +1769,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
       <a href="portfolio/gilded-spur.html" class="cta" style="border-bottom: 1px solid var(--clay); color: var(--forest); padding-bottom: 6px; font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; display: inline-flex; gap: 12px; align-items: center;">Read the case study →</a>
     </div>
   </div>
+
+  <!-- More from the studio -->
+  <div class="more-work">
+    <div class="more-work-head"><h3>More from the studio</h3><a href="/portfolio.html">The full portfolio</a></div>
+    <div class="more-work-row">
+      <a href="portfolio/space-cowboy.html"><div class="ph"><img src="assets/sc/space-cowboy_dome-bed-sconces-dusk-sm.jpg" alt="Four-poster under a painted night sky in the Space Cowboy dome" loading="lazy"/></div><span class="n">Space Cowboy</span><span class="p">Hochatown, OK &middot; Newest</span></a>
+      <a href="branding.html"><div class="ph"><img src="assets/wild-pelican_neon-be-wild.jpg" alt="Let Them Be Wild neon over a mustard sofa at The Wild Pelican" loading="lazy" style="object-position:72% 50%"/></div><span class="n">The Wild Pelican</span><span class="p">Bradenton, FL</span></a>
+      <a href="portfolio/gilded-spur.html"><div class="ph"><img src="assets/gilded-spur_primary-bath.jpg" alt="Soaking tub against cedar walls at Gilded Spur" loading="lazy"/></div><span class="n">Gilded Spur</span><span class="p">Hochatown, OK</span></a>
+      <a href="portfolio/cabin-broken-bow.html"><div class="ph"><img src="assets/lazy-lariat_kids-adventure-bunk.jpg" alt="Kids adventure bunk room with a mountain mural at Lazy Lariat" loading="lazy"/></div><span class="n">Lazy Lariat</span><span class="p">Broken Bow, OK</span></a>
+    </div>
+  </div>
 </section>
 
 <!-- ─── BRIDGE THE GAP ─────────────────────────────────────── -->
@@ -1763,7 +1798,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
       <span class="eyebrow reveal">Beyond four walls</span>
       <h2 class="reveal delay-1">We design the nights<br/>they&rsquo;ll <em>talk about</em>.</h2>
       <p class="reveal delay-2">Fire pits at dusk, star-painted ceilings, game rooms that empty the group chat &mdash; the details that turn a stay into a story, and a story into a five-star review.</p>
-      <p class="door-note reveal delay-3">Pictured: the hand-painted door of the Space Cowboy dome, deep in the Hochatown pines.</p>
+      <p class="door-note reveal delay-3">Pictured: the hand-painted dome door at Space Cowboy, the studio&rsquo;s newest project.</p>
     </div>
   </div>
 </section>
@@ -1959,7 +1994,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
       <ul>
         <li><a href="budget-estimator.html">Budget Estimator</a></li>
         <li><a href="journal.html">Journal &amp; guides</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -2051,7 +2086,7 @@ n.querySelectorAll('.yw-links a').forEach(function(a){
   var portal=document.querySelector('.portal'), stage, anchor, media, img, frame, copy, cap, shade, base;
   if(portal && !reduce){
     stage=portal.querySelector('.portal-stage'); anchor=portal.querySelector('.portal-anchor');
-    media=portal.querySelector('.portal-media'); img=media.querySelector('img'); frame=portal.querySelector('.portal-frame');
+    media=portal.querySelector('.portal-media'); img=media.querySelector('.pm-slides'); frame=portal.querySelector('.portal-frame');
     copy=portal.querySelector('.portal-copy'); cap=portal.querySelector('.portal-caption'); shade=portal.querySelector('.portal-shade');
   }
   function measure(){
@@ -2067,13 +2102,22 @@ n.querySelectorAll('.yw-links a').forEach(function(a){
     var r=portal.getBoundingClientRect(), total=portal.offsetHeight-stage.offsetHeight;
     var p=clamp((navh()-r.top)/total,0,1), e=ease(clamp(p/.72,0,1)), k=1-e, R=base.w/2*k;
     media.style.clipPath='inset('+(base.t*k)+'px '+(base.r*k)+'px '+(base.b*k)+'px '+(base.l*k)+'px round '+R+'px '+R+'px 0 0)';
-    var W=stage.offsetWidth, H=stage.offsetHeight, dx=(base.l+base.w/2)-W*.40, dy=base.t*.72;
+    var W=stage.offsetWidth, H=stage.offsetHeight, dx=(base.l+base.w/2)-W*.5, dy=base.t*.6;
     img.style.transform='translate('+(dx*k)+'px,'+(dy*k)+'px) scale('+(1.18-.18*e)+')';
     copy.style.opacity=clamp(1-e*2.2,0,1); copy.style.transform='translateY('+(-40*e)+'px)';
     copy.style.pointerEvents=e>.3?'none':'';
-    frame.style.opacity=clamp(1-e*3,0,1);
+    frame.style.opacity=clamp(1-e*3,0,1); if(tag){tag.style.opacity=clamp(1-e*3,0,1);}
     var c=clamp((p-.66)/.16,0,1); cap.style.opacity=c; cap.style.transform='translateY('+(18*(1-c))+'px)'; shade.style.opacity=c;
   }
+
+
+  /* ROTATING ROOMS */
+  var slides=[].slice.call(document.querySelectorAll('.pm-slides .ps')), si=0, tag=document.querySelector('.portal-tag');
+  function label(){ var s=slides[si]; document.querySelectorAll('.pt-proj,.pc-proj').forEach(function(n){n.textContent=s.dataset.proj;}); document.querySelectorAll('.pt-place,.pc-place').forEach(function(n){n.textContent=s.dataset.place;}); }
+  if(slides.length>1 && !reduce){
+    setInterval(function(){ if(document.hidden) return; var nx=(si+1)%slides.length; var im=slides[nx]; if(im.loading==='lazy'){im.loading='eager';} slides[si].classList.remove('on'); im.classList.add('on'); si=nx; label(); },4200);
+  }
+  function placeTag(){ if(!tag||!base) return; tag.style.left=(base.l)+'px'; tag.style.top=(base.t-14-46)+'px'; }
 
   /* ROOM WALK */
   var walk=document.querySelector('.walk'), pin, track, bar, pinned=false, dist=0;
@@ -2095,7 +2139,7 @@ n.querySelectorAll('.yw-links a').forEach(function(a){
 
   var ticking=false;
   function onScroll(){ if(ticking) return; ticking=true; requestAnimationFrame(function(){ drawPortal(); drawWalk(); ticking=false; }); }
-  function onResize(){ measure(); setupWalk(); drawPortal(); drawWalk(); }
+  function onResize(){ measure(); placeTag(); setupWalk(); drawPortal(); drawWalk(); }
   window.addEventListener('scroll',onScroll,{passive:true});
   window.addEventListener('resize',onResize);
   window.addEventListener('load',onResize);
