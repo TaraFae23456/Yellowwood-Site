@@ -1294,6 +1294,38 @@ footer {
 .portal-tag .pt-proj{font-family:var(--font-serif);font-style:italic;font-size:17px;letter-spacing:0;text-transform:none;color:var(--forest)}
 .no-js .portal-tag{display:none}
 @media (prefers-reduced-motion: reduce){ .portal-tag{display:none} }
+
+/* v3: lead with a full-bleed hero shot, then fold into the arch */
+.portal-shade{opacity:1;background:linear-gradient(90deg,rgba(22,29,23,.78) 0%,rgba(22,29,23,.5) 32%,rgba(22,29,23,.08) 62%,rgba(22,29,23,0) 100%),linear-gradient(180deg,rgba(22,29,23,.3) 0%,rgba(22,29,23,0) 25%,rgba(22,29,23,0) 55%,rgba(22,29,23,.7) 100%)}
+@media (max-width:820px){.portal-shade{background:linear-gradient(180deg,rgba(22,29,23,.25) 0%,rgba(22,29,23,.15) 30%,rgba(22,29,23,.85) 72%,rgba(22,29,23,.92) 100%)}}
+.portal-over{position:absolute;inset:0;z-index:4;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding:0 var(--gutter) clamp(40px,8vh,90px);color:var(--bone)}
+.po-copy{max-width:min(62vw,900px)}
+.portal-over .eyebrow{display:block;margin-bottom:22px;color:var(--lamp)}
+.portal-over .portal-headline{color:var(--bone);font-size:clamp(46px,6.4vw,108px)}
+.portal-over .portal-headline em{color:var(--clay)}
+.portal-over .portal-sub{color:rgba(246,244,238,.85);margin:24px 0 30px}
+.portal-over .portal-cta{color:var(--bone)}
+.portal-over .portal-cta:hover{color:var(--lamp)}
+.po-tag{display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right;flex:0 0 auto}
+.po-tag .pt-proj{font-family:var(--font-serif);font-style:italic;font-size:20px}
+.po-tag .pt-place{font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.75}
+.portal-copy .pa-name{font-family:var(--font-serif);font-size:clamp(54px,6.4vw,104px);line-height:.95;letter-spacing:-.02em;color:var(--forest)}
+.portal-copy .pa-place{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gray);margin:16px 0 26px}
+.portal-copy .pa-note{font-family:var(--font-serif);font-style:italic;font-size:clamp(18px,1.4vw,22px);line-height:1.5;color:var(--gray);max-width:36ch;margin-bottom:30px}
+.portal-tag{display:none!important}
+.portal-scroll{color:var(--bone);z-index:5}
+.no-js .portal-copy{display:none}
+@media (max-width:820px){
+  .portal-over{flex-direction:column;align-items:flex-start;justify-content:flex-end}
+  .po-copy{max-width:none}
+  .po-tag{align-items:flex-start;text-align:left}
+  .portal-over .portal-headline{font-size:clamp(40px,11vw,60px)}
+  .portal-copy .pa-name{font-size:clamp(44px,13vw,64px)}
+}
+@media (prefers-reduced-motion: reduce){
+  .js .portal-copy{display:none}
+  .js .portal-media{height:calc(100vh - var(--navh))}
+}
 /* footer/apply tweaks */
 .apply-bg{opacity:.22 !important}
 a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
@@ -1527,31 +1559,38 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 <!-- ─── HERO · the doorway ──────────────────────────────────── -->
 <header class="portal" id="top">
   <div class="portal-stage">
-    <div class="portal-copy">
-      <span class="eyebrow">A short-term rental design &amp; brand studio</span>
-      <h1 class="portal-headline">Most rentals are forgettable.<br/>We refuse to design <em>forgettable</em>.</h1>
-      <p class="portal-sub">Interiors that book. Artful spaces. Designed for the visit.</p>
-      <a href="#apply" class="portal-cta">Apply to work with Yellowwood Atelier</a>
+    <div class="portal-copy" aria-live="polite">
+      <span class="eyebrow">Selected work</span>
+      <p class="pa-name"><span class="pt-proj">Lazy Lariat</span></p>
+      <p class="pa-place pt-place">Broken Bow, Oklahoma</p>
+      <p class="pa-note">One of four properties the studio has designed, branded and launched, from the Oklahoma pines to Florida&rsquo;s Gulf Coast.</p>
+      <a href="/portfolio.html" class="portal-cta">See every project</a>
     </div>
     <div class="portal-anchor" aria-hidden="true"></div>
     <div class="portal-frame" aria-hidden="true"></div>
     <div class="portal-media">
       <div class="pm-slides">
-        <img class="ps on" src="assets/gilded-spur_primary-bedroom-oklahoma-sky-neon_hochatown-ok.jpg" style="object-position:50% 45%" data-proj="Gilded Spur" data-place="Hochatown, Oklahoma" alt="Primary bedroom with a four-poster bed and an Oklahoma-sky neon at Gilded Spur, Hochatown, Oklahoma" fetchpriority="high"/>
-        <img class="ps" src="assets/lazy-lariat_primary-bedroom-navy.jpg" style="object-position:50% 50%" data-proj="Lazy Lariat" data-place="Broken Bow, Oklahoma" alt="Navy primary bedroom with a tufted headboard and gallery wall at Lazy Lariat, Broken Bow, Oklahoma" loading="lazy"/>
-        <img class="ps" src="assets/sc/space-cowboy_dome-bed-to-the-moon-neon.jpg" srcset="assets/sc/space-cowboy_dome-bed-to-the-moon-neon-sm.jpg 1000w, assets/sc/space-cowboy_dome-bed-to-the-moon-neon.jpg 2000w" sizes="100vw" style="object-position:50% 40%" data-proj="Space Cowboy" data-place="Hochatown, Oklahoma" alt="Geodesic dome bedroom with a &lsquo;to the moon&rsquo; neon over a painted night sky at Space Cowboy, Hochatown, Oklahoma" loading="lazy"/>
-        <img class="ps" src="assets/wild-pelican_neon-be-wild.jpg" style="object-position:55% 50%" data-proj="The Wild Pelican" data-place="Bradenton, Florida" alt="&lsquo;Let Them Be Wild&rsquo; neon over a mustard sofa and tropical-bird wallpaper at The Wild Pelican, Bradenton, Florida" loading="lazy"/>
-        <img class="ps" src="assets/gilded-spur_horse-mural-magic-hat-murals_hochatown-ok.jpg" style="object-position:40% 50%" data-proj="Gilded Spur" data-place="Hochatown, Oklahoma" alt="Great room with a hand-painted horse mural, leather sectional and cowhide rug at Gilded Spur, Hochatown, Oklahoma" loading="lazy"/>
-        <img class="ps" src="assets/lazy-lariat_great-room-mural-wide.jpg" style="object-position:60% 50%" data-proj="Lazy Lariat" data-place="Broken Bow, Oklahoma" alt="Great room with a sunset mountain mural, cognac leather and a vintage rug at Lazy Lariat, Broken Bow, Oklahoma" loading="lazy"/>
+        <img class="ps on" src="assets/lazy-lariat_great-room-mural-wide.jpg" style="object-position:60% 50%" data-proj="Lazy Lariat" data-href="portfolio/cabin-broken-bow.html" data-place="Broken Bow, Oklahoma" alt="Great room with a sunset mountain mural, cognac leather and a vintage rug at Lazy Lariat, Broken Bow, Oklahoma" fetchpriority="high"/>
+        <img class="ps" src="assets/gilded-spur_horse-mural-magic-hat-murals_hochatown-ok.jpg" style="object-position:40% 50%" data-proj="Gilded Spur" data-href="portfolio/gilded-spur.html" data-place="Hochatown, Oklahoma" alt="Great room with a hand-painted horse mural, leather sectional and cowhide rug at Gilded Spur, Hochatown, Oklahoma" loading="lazy"/>
+        <img class="ps" src="assets/sc/space-cowboy_dome-bed-sconces-dusk.jpg" srcset="assets/sc/space-cowboy_dome-bed-sconces-dusk-sm.jpg 1000w, assets/sc/space-cowboy_dome-bed-sconces-dusk.jpg 2000w" sizes="100vw" style="object-position:50% 40%" data-proj="Space Cowboy" data-href="portfolio/space-cowboy.html" data-place="Hochatown, Oklahoma" alt="Geodesic dome bedroom with a &lsquo;to the moon&rsquo; neon over a painted night sky at Space Cowboy, Hochatown, Oklahoma" loading="lazy"/>
+        <img class="ps" src="assets/wild-pelican_neon-be-wild.jpg" style="object-position:55% 50%" data-proj="The Wild Pelican" data-href="branding.html" data-place="Bradenton, Florida" alt="&lsquo;Let Them Be Wild&rsquo; neon over a mustard sofa and tropical-bird wallpaper at The Wild Pelican, Bradenton, Florida" loading="lazy"/>
+        <img class="ps" src="assets/gilded-spur_primary-bedroom-oklahoma-sky-neon_hochatown-ok.jpg" style="object-position:50% 45%" data-proj="Gilded Spur" data-href="portfolio/gilded-spur.html" data-place="Hochatown, Oklahoma" alt="Primary bedroom with a four-poster bed and an Oklahoma-sky neon at Gilded Spur, Hochatown, Oklahoma" loading="lazy"/>
+        <img class="ps" src="assets/lazy-lariat_primary-bedroom-navy.jpg" style="object-position:50% 50%" data-proj="Lazy Lariat" data-href="portfolio/cabin-broken-bow.html" data-place="Broken Bow, Oklahoma" alt="Navy primary bedroom with a tufted headboard and gallery wall at Lazy Lariat, Broken Bow, Oklahoma" loading="lazy"/>
       </div>
       <div class="portal-shade" aria-hidden="true"></div>
+      <div class="portal-over">
+        <div class="po-copy">
+          <span class="eyebrow">A short-term rental design &amp; brand studio</span>
+          <h1 class="portal-headline">Most rentals are forgettable.<br/>We refuse to design <em>forgettable</em>.</h1>
+          <p class="portal-sub">Interiors that book. Artful spaces. Designed for the visit.</p>
+          <a href="#apply" class="portal-cta">Apply to work with Yellowwood Atelier</a>
+        </div>
+        <div class="po-tag"><span class="pt-proj">Lazy Lariat</span><span class="pt-place">Broken Bow, Oklahoma</span></div>
+      </div>
     </div>
-    <div class="portal-tag" aria-live="polite"><span class="pt-proj">Gilded Spur</span><span class="pt-place">Hochatown, Oklahoma</span></div>
-    <div class="portal-caption">
-      <span class="pc-line">Every room starts with a brief. <i>None of them say &ldquo;beige.&rdquo;</i></span>
-      <span class="pc-where"><span class="pc-proj">Gilded Spur</span><br/><span class="pc-place">Hochatown, Oklahoma</span></span>
-    </div>
-    <div class="portal-scroll" aria-hidden="true">Scroll to step inside</div>
+    <div class="portal-tag" aria-live="polite"><span class="pt-proj">Lazy Lariat</span><span class="pt-place">Broken Bow, Oklahoma</span></div>
+    
+    <div class="portal-scroll" aria-hidden="true">Scroll</div>
   </div>
 </header>
 
@@ -2083,11 +2122,11 @@ n.querySelectorAll('.yw-links a').forEach(function(a){
   function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
 
   /* PORTAL HERO */
-  var portal=document.querySelector('.portal'), stage, anchor, media, img, frame, copy, cap, shade, base;
+  var portal=document.querySelector('.portal'), stage, anchor, media, img, frame, copy, over, cue, shade, base;
   if(portal && !reduce){
     stage=portal.querySelector('.portal-stage'); anchor=portal.querySelector('.portal-anchor');
     media=portal.querySelector('.portal-media'); img=media.querySelector('.pm-slides'); frame=portal.querySelector('.portal-frame');
-    copy=portal.querySelector('.portal-copy'); cap=portal.querySelector('.portal-caption'); shade=portal.querySelector('.portal-shade');
+    copy=portal.querySelector('.portal-copy'); over=portal.querySelector('.portal-over'); cue=portal.querySelector('.portal-scroll'); shade=portal.querySelector('.portal-shade');
   }
   function measure(){
     if(!stage) return;
@@ -2100,14 +2139,14 @@ n.querySelectorAll('.yw-links a').forEach(function(a){
   function drawPortal(){
     if(!stage||!base) return;
     var r=portal.getBoundingClientRect(), total=portal.offsetHeight-stage.offsetHeight;
-    var p=clamp((navh()-r.top)/total,0,1), e=ease(clamp(p/.72,0,1)), k=1-e, R=base.w/2*k;
-    media.style.clipPath='inset('+(base.t*k)+'px '+(base.r*k)+'px '+(base.b*k)+'px '+(base.l*k)+'px round '+R+'px '+R+'px 0 0)';
-    var W=stage.offsetWidth, H=stage.offsetHeight, dx=(base.l+base.w/2)-W*.5, dy=base.t*.6;
-    img.style.transform='translate('+(dx*k)+'px,'+(dy*k)+'px) scale('+(1.18-.18*e)+')';
-    copy.style.opacity=clamp(1-e*2.2,0,1); copy.style.transform='translateY('+(-40*e)+'px)';
-    copy.style.pointerEvents=e>.3?'none':'';
-    frame.style.opacity=clamp(1-e*3,0,1); if(tag){tag.style.opacity=clamp(1-e*3,0,1);}
-    var c=clamp((p-.66)/.16,0,1); cap.style.opacity=c; cap.style.transform='translateY('+(18*(1-c))+'px)'; shade.style.opacity=c;
+    var p=clamp((navh()-r.top)/total,0,1), e=ease(clamp(p/.8,0,1)), R=base.w/2*e;
+    media.style.clipPath='inset('+(base.t*e)+'px '+(base.r*e)+'px '+(base.b*e)+'px '+(base.l*e)+'px round '+R+'px '+R+'px 0 0)';
+    var W=stage.offsetWidth, dx=(base.l+base.w/2)-W*.5, dy=base.t*.6;
+    img.style.transform='translate('+(dx*e)+'px,'+(dy*e)+'px) scale('+(1+.18*e)+')';
+    var o=clamp(1-e*2.4,0,1); over.style.opacity=o; over.style.transform='translateY('+(30*e)+'px)'; over.style.pointerEvents=o<.2?'none':'';
+    shade.style.opacity=clamp(1-e*1.6,0,1); if(cue){cue.style.opacity=o;}
+    var c=clamp((e-.5)/.4,0,1); copy.style.opacity=c; copy.style.transform='translateY('+(24*(1-c))+'px)'; copy.style.pointerEvents=c<.5?'none':'';
+    frame.style.opacity=clamp((e-.75)/.25,0,1);
   }
 
 
